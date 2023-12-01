@@ -122,7 +122,7 @@ body {
 }
 
 .universal_padding_right {
-  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .font_header2 {
@@ -176,7 +176,6 @@ body {
 .font_GBP {
   color: #070F38;
 
-  text-align: center;
   font-family: Nunito;
   font-size: 32px;
   font-style: normal;
@@ -186,6 +185,13 @@ body {
 
 .background_header2 {
   background-image: url(../../public/imagess/bannerbg2.png);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background_header22 {
+  background-color: #FFF;
   background-position: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -261,7 +267,7 @@ body {
 }
 
 .wisth_circle {
-  width: 10%;
+  width: 8%;
 }
 
 .text_section5 {
@@ -579,4 +585,338 @@ body {
     font-weight: 600;
   }
 
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.font_GBP1 {
+  color: #979797;
+
+  text-align: center;
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.background_card_new11 {
+  border-radius: 8px;
+  border: 1px solid #DCDCDC;
+
+  background: #FFF;
+}
+
+.new_c_text {
+  color: #000;
+
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+  .new_c_text {
+    color: #000;
+
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.custom-distance-top {
+  margin-top: 10%;
+}
+
+.background_header_linear_22 {
+  background-image: linear-gradient(#FFF, #e1e3e4, #FFF);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.font_cards {
+  color: #070F38;
+
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.font_cards_para {
+  color: #5D7079;
+
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.neg_mar_top {
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+.font_in_cards {
+  color: #FFF;
+
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .font_cards {
+    color: #070F38;
+
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .font_cards_para {
+    color: #5D7079;
+
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+
+  .font_in_cards {
+    color: #FFF;
+
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+.font_GBP3 {
+  color: #000;
+
+  font-family: Nunito;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.p_text_currency {
+  color: #666;
+
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.points_currency {
+  color: #030734;
+
+  font-family: Nunito;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.split {
+  color: #141414;
+
+  font-family: Nunito;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.text_banner41 {
+  color: #FFF;
+
+  text-align: center;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.carddd {
+  color: #2A3F65;
+
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.search_article::placeholder {
+  color: #B4B4B4;
+
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.follow_j {
+  color: #070F38;
+
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.bb_text {
+  color: #070F38;
+
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.bb_text_Date {
+  color: #5D7079;
+
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.button_backgroynd_n {
+  border-radius: 8px !important;
+  background: #2A3F65 !important;
+  border: 1px solid #2A3F65 !important;
+}
+
+.button_backgroynd_nn {
+  border-radius: 8px;
+  background: #F4F4F4 !important;
+  border: 1px solid #F4F4F4 !important;
+}
+
+.showinggg {
+  color: #9499A1;
+
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.new_text {
+  color: #3D475C;
+
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.head_name {
+  color: #070F38;
+
+  font-family: Nunito;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.head_name_p {
+  color: #5D7079;
+
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.text_h1 {
+  color: #070F38;
+
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.text_h2 {
+  color: #6A6A6A;
+
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.text_h3 {
+  color: #858585;
+
+  text-align: center;
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.text_h4 {
+  color: #929292;
+
+  text-align: center;
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.ppp_text {
+  color: #070F38;
+
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+  .button_backgroynd_n {
+    border-radius: 8px !important;
+    background: #2A3F65 !important;
+    border: 1px solid #2A3F65 !important;
+    font-family: Nunito;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .button_backgroynd_nn {
+    border-radius: 8px;
+    background: #F4F4F4 !important;
+    border: 1px solid #F4F4F4 !important;
+    font-family: Nunito;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+  }
 }
