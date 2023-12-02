@@ -36,15 +36,19 @@ function Blogs() {
                         <div className='col-md-12 background_headerpp universal_padding'>
                             <div className='row pt-4'>
                                 <div className='col-md-2 col-5'>
-                                    <Link href="/">
+                                    <Link href="/" className='link_style'>
                                         <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2'>
-                                    <p className='m-0 p-0 font_header2'>Home</p>
+                                    <Link href="/" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Home</p>
+                                    </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2' >
-                                    <p className='m-0 p-0 font_header2'>Blog</p>
+                                    <Link href="/Blogs" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Blog</p>
+                                    </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-3'>
                                     <p className='m-0 p-0 font_header2'>Help Center</p>
@@ -77,6 +81,7 @@ function Blogs() {
                                     <div className='col-md-12'>
                                         <div className='row'>
                                             <div className='col-md-6 mt-4 '>
+                                                <Link href="/Blogsdetail" className='link_style'>
                                                 <div className='col-md-12 px-md-3'>
                                                     <div className='col-md-12 '>
                                                         <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
@@ -103,6 +108,7 @@ function Blogs() {
                                                         <img className='img-fluid' src='/imagess/readmore.png' />
                                                     </div>
                                                 </div>
+                                                </Link>
                                             </div>
                                             <div className='col-md-6 mt-4 '>
                                                 <div className='col-md-12 px-md-3'>
@@ -244,17 +250,17 @@ function Blogs() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
 
                                         </div>
                                         <div className='col-md-12 px-3 mt-5 ' >
                                             <div className='row'>
-                                            <div className='col-md-6 pt-3'>
-                                                <p className='showinggg'>Showing: <span className='new_text'>14 of 20</span></p>
-                                            </div>
-                                            <div className='col-md-6 text-end'>
-                                                <img className='img-fluid' src='/imagess/pg.png' />
-                                            </div>
+                                                <div className='col-md-6 pt-3'>
+                                                    <p className='showinggg'>Showing: <span className='new_text'>14 of 20</span></p>
+                                                </div>
+                                                <div className='col-md-6 text-end'>
+                                                    <img className='img-fluid' src='/imagess/pg.png' />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -344,7 +350,7 @@ function Blogs() {
                                 </div>
                             </div>
                         </div>
-                        
+
 
                         <div className='col-md-12  background_header3 pt-5  px-md-5  pb-md-0 pb-5'>
                             <div className='row universal_padding'>

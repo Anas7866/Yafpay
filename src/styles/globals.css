@@ -611,7 +611,6 @@ body {
 
 .new_c_text {
   color: #000;
-
   font-family: Nunito;
   font-size: 18px;
   font-style: normal;
@@ -919,4 +918,18 @@ body {
     font-style: normal;
     font-weight: 500;
   }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.background_active_drop {
+  border-radius: 8px 8px 0px 0px;
+  background: #142445;
+  color: white !important;
+}
+
+.background_active_drop p {
+  border-radius: 8px 8px 0px 0px;
+  background: #142445;
+  color: white ;
 }

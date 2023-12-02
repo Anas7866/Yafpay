@@ -36,15 +36,19 @@ function Acceptablepolicy() {
                     <div className='col-md-12 background_headerpp universal_padding'>
                         <div className='row pt-4'>
                             <div className='col-md-2 col-5'>
-                                <Link href="/">
+                                <Link href="/" className='link_style'>
                                     <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
                                 </Link>
                             </div>
                             <div className='col-md-1 pt-2 col-2'>
-                                <p className='m-0 p-0 font_header2'>Home</p>
+                                <Link href="/" className='link_style'>
+                                          <p className='m-0 p-0 font_header2'>Home</p>
+                                    </Link>
                             </div>
                             <div className='col-md-1 pt-2 col-2' >
-                                <p className='m-0 p-0 font_header2'>Blog</p>
+                                  <Link href="/Blogs" className='link_style'>
+ <p className='m-0 p-0 font_header2'>Blog</p>
+</Link>
                             </div>
                             <div className='col-md-1 pt-2 col-3'>
                                 <p className='m-0 p-0 font_header2'>Help Center</p>
@@ -58,7 +62,7 @@ function Acceptablepolicy() {
                                         Acceptable Use Policy
                                     </p>
                                     <p className='m-0 p-0 sub_heading_banner1 pt-3' data-aos="fade-right" data-aos-duration="3000">
-                                       <span className='home_p'>Home</span><span className='home_p1'> <LuDot /> Acceptable Use Policy</span>
+                                        <span className='home_p'>Home</span><span className='home_p1'> <LuDot /> Acceptable Use Policy</span>
                                     </p>
                                 </div>
                                 <div className='col-md-6 mt-md-0 mt-5 text-center'>
@@ -71,13 +75,17 @@ function Acceptablepolicy() {
                     <div className='col-md-12 universal_padding'>
                         <p className='m-0 p-0 yapay_head'>Acceptable Use Policy</p>
                         <p className='m-0 p-0 yapay_head1'>
-                            Grey provides foreign virtual accounts to customers thus enables customers to receive and make payments subject to certain eligibility requirements which may depend on your
-                            occupation, country of residency or incorporation, applicable anti-money laundering regulations, Grey risk management policies or procedures and other factors used by us to
-                            determine such eligibility from time to time at our sole discretion.
-                            To avoid fraud and money laundering activities we do not accept users with unknown sources of income or ambiguous lines of businesses/ occupations. Our users are encouraged
-                            to show reasons why they need a foreign virtual account. Grey reserves the right to refuse your virtual account application and Grey will only verify your application if on viewing
-                            your submitted documents and details we are satisfied that the nature of business being carried out by a user is such that he/she will be using a foreign virtual account for
-                            transactions.
+                            Yafpay provides foreign virtual accounts to customers thus enables customers to receive and make
+                            payments subject to certain eligibility requirements which may depend on your occupation, country of
+                            residency or incorporation, applicable anti-money laundering regulations, Yafpay risk management
+                            policies or procedures and other factors used by us to determine such eligibility from time to time at our
+                            sole discretion.
+                            To avoid fraud and money laundering activities we do not accept users with unknown sources of income
+                            or ambiguous lines of businesses/ occupations. Our users are encouraged to show reasons why they need
+                            a foreign virtual account. Yafpay reserves the right to refuse your virtual account application and Yafpay
+                            will only verify your application if on viewing your submitted documents and details we are satisfied that
+                            the nature of business being carried out by a user is such that he/she will be using a foreign virtual
+                            account for transactions.
                             Our platform is to be used in:
                         </p>
                         <p className='m-0 p-0 yapay_head1'>
@@ -94,18 +102,23 @@ function Acceptablepolicy() {
                         <p className='m-0 p-0 yapay_head'>RESTRICTIONS ON USING OUR PLATFORM</p>
                         <p className='m-0 p-0 yapay_head2'>Transacting on your own account</p>
                         <p className='m-0 p-0 yapay_head1'>
-                            All activities under a Grey account shall be deemed as activities carried out by the registered user. You shall only use the services to transact on your own account and not on
-                            behalf of any other person or entity. You agree not to authorize any other person or entity to use your user name and password or mobile device to access the Services. You are
-                            solely responsible for the maintenance, confidentiality, and security of your username, password, and other User Information.Grey would not be responsible for any losses
-                            arising out of the loss or theft of your User Information or your mobile device or from unauthorized or fraudulent transactions associated with your Grey Virtual Account. If you
-                            suspect or become aware of any unauthorized activity or access to your username, password, or mobile device, you must contact us immediately to restrict or block your
-                            account.
+                            All activities under a Yafpay account shall be deemed as activities carried out by the registered user. You
+                            shall only use the services to transact on your own account and not on behalf of any other person or
+                            entity. You agree not to authorize any other person or entity to use your user name and password or
+                            mobile device to access the Services. You are solely responsible for the maintenance, confidentiality, and
+                            security of your username, password, and other User Information.
+                            Yafpay would not be responsible for any losses arising out of the loss or theft of your User Information or
+                            your mobile device or from unauthorized or fraudulent transactions associated with your Yafpay Virtual
+                            Account. If you suspect or become aware of any unauthorized activity or access to your username,
+                            password, or mobile device, you must contact us immediately to restrict or block your account.
+
                         </p>
 
                         <p className='m-0 p-0 yapay_head2 mt-4'>One account per person or entity</p>
                         <p className='m-0 p-0 yapay_head1'>
-                            you may only open one Grey account unless we have agreed in writing, the opening of additional accounts. Grey may refuse the creation of duplicate accounts for the same user.
-                            Where duplicate accounts are detected, Grey may close or merge these duplicate accounts at its sole discretion.
+                            You may only open one Yafpay account unless we have agreed in writing, the opening of additional
+                            accounts. Yafpay may refuse the creation of duplicate accounts for the same user. Where duplicate
+                            accounts are detected, Yafpay may close or merge these duplicate accounts at its sole discretion.
                         </p>
                         <p className='m-0 p-0 yapay_head5 mt-4'>1. Restricted activities</p>
                         <p className='m-0 p-0 yapay_head1'>
@@ -113,14 +126,18 @@ function Acceptablepolicy() {
                         </p>
                         <p className='m-0 p-0 yapay_head1'>
                             <ul className='mb-0'>
-                                <li>in any way that breaches any applicable local, national, or international law or regulation, or causes Grey to breach any applicable law or regulation;</li>
-                                <li>in any way that is unlawful or fraudulent, or has any unlawful or fraudulent purpose or effect;</li>
-                                <li>for the purpose of harming or attempting to harm minors in any way;</li>
-                                <li>for anything that is abusive, harmful, or does not comply with our content standards;</li>
-                                <li>for any unsolicited or unauthorised advertising, promotional material, or any other form of spam;</li>
-                                <li>to deal in harmful programs such as viruses, spyware, or similar computer code designed to adversely affect the operation of any computer software or hardware;</li>
-                                <li>Not to use your Grey virtual account in a manner that is likely to result in complaints, disputes, reversals, chargebacks, or other liabilities to Grey, other Customers, third </li>
-                                <li>parties, or you.</li>
+                                <li>in any way that breaches any applicable local, national, or international law or regulation, or
+                                    causes Yafpay to breach any applicable law or regulation</li>
+                                <li> in any way that is unlawful or fraudulent, or has any unlawful or fraudulent purpose or effect;</li>
+                                <li> for the purpose of harming or attempting to harm minors in any way;</li>
+                                <li> for anything that is abusive, harmful, or does not comply with our content standards;
+                                </li>
+                                <li> for any unsolicited or unauthorised advertising, promotional material, or any other form of spam;
+                                </li>
+                                <li> to deal in harmful programs such as viruses, spyware, or similar computer code designed to adversely affect the operation of any computer software or hardware;
+                                </li>
+                                <li> Not to use your Yafpay virtual account in a manner that is likely to result in complaints, disputes,
+                                    reversals, chargebacks, or other liabilities to Yafpay, other Customers, third parties, or you.</li>
                             </ul>
                         </p>
 
@@ -142,12 +159,14 @@ function Acceptablepolicy() {
                                 <li>All Drugs and Pharma</li>
                                 <li>unlicensed financial services, stocks or other securities;</li>
                                 <li>Items or services that promote hate, violence, racial intolerance</li>
-                                <li>any product or service that is illegal or marketed or sold in such a way as to create liability to Grey.</li>
+                                <li>any product or service that is illegal or marketed or sold in such a way as to create liability to Yafpay.</li>
                             </ul>
                         </p>
                         <p className='m-0 p-0 yapay_head1'>
-                            Grey may pre-approve the use of its Services in connection with some of the above, following review and examination of circumstances thereof, and subject to its sole
-                            discretion. Acts, products or services which constitute a breach of applicable laws or regulations will not be supported under any circumstances.
+                            Yafpay may pre-approve the use of its Services in connection with some of the above, following review
+                            and examination of circumstances thereof, and subject to its sole discretion. Acts, products or services
+                            which constitute a breach of applicable laws or regulations will not be supported under any
+                            circumstances
                         </p>
                     </div>
 

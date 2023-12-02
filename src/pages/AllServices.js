@@ -23,7 +23,12 @@ function AllServices() {
         });
     }, []);
 
-    const [open, setOpen] = useState(false);
+    const [open1, setOpen1] = useState(false);
+    const [open2, setOpen2] = useState(false);
+    const [open3, setOpen3] = useState(false);
+    const [open4, setOpen4] = useState(false);
+    const [open5, setOpen5] = useState(false);
+    const [open6, setOpen6] = useState(false);
 
     return (
         <>
@@ -40,15 +45,19 @@ function AllServices() {
                         <div className='col-md-12 background_header1 universal_padding'>
                             <div className='row pt-4'>
                                 <div className='col-md-2 col-5'>
-                                    <Link href="/">
+                                    <Link href="/" className='link_style'>
                                         <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2'>
-                                    <p className='m-0 p-0 font_header2'>Home</p>
+                                    <Link href="/" className='link_style'>
+                                          <p className='m-0 p-0 font_header2'>Home</p>
+                                    </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2' >
-                                    <p className='m-0 p-0 font_header2'>Blog</p>
+                                      <Link href="/Blogs" className='link_style'>
+ <p className='m-0 p-0 font_header2'>Blog</p>
+</Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-3'>
                                     <p className='m-0 p-0 font_header2'>Help Center</p>
@@ -240,66 +249,145 @@ function AllServices() {
                                     <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/banner-s3.png' />
                                 </div>
                                 <div className='col-md-8 px-md-5 mt-5 m-md-auto'>
-                                    <div className='col-md-12 background_card_new11 px-3 py-2 bg-white'>
+                                    <div className='col-md-12 background_card_new11   bg-white'
+                                        onClick={() => setOpen1(!open1)}
+                                        aria-controls="example-collapse-text"
+                                        aria-expanded={open1}
+                                    >
+                                        <div className={`col-md-12 ${open1 ? "background_active_drop" : ""} py-2 px-3`}>
                                         <div className='row'>
                                             <div className='col-md-8 col-10 m-auto'>
                                                 <p className='m-0 p-0 new_c_text'>1. What kind of financial consultancy you need?</p>
                                             </div>
                                             <div className='col-md-4 col-2 text-end'>
-                                                <img className='img-fluid' src='/imagess/pluss.png' />
+                                                <img className='img-fluid'  src={`/imagess/${open1 ? "minus" : "pluss"}.png`} />
                                             </div>
                                         </div>
+                                        </div>
+                                        <Collapse in={open1} className='mt-2 px-3'>
+                                            <div id="example-collapse-text ">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                                                labore wes anderson cred nesciunt sapiente ea proident.
+                                            </div>
+                                        </Collapse>
                                     </div>
-                                    <div className='col-md-12 mt-4 background_card_new11 px-3 py-2 bg-white'>
+                                    <div className='col-md-12 background_card_new11 mt-4   bg-white'
+                                        onClick={() => setOpen2(!open2)}
+                                        aria-controls="example-collapse-text"
+                                        aria-expanded={open2}
+                                    >
+                                        <div className={`col-md-12 ${open2 ? "background_active_drop" : ""} py-2 px-3`}>
                                         <div className='row'>
                                             <div className='col-md-8 col-10 m-auto'>
                                                 <p className='m-0 p-0 new_c_text'>2. What Is The Best Features And Services We Deliver?</p>
                                             </div>
                                             <div className='col-md-4 col-2 text-end'>
-                                                <img className='img-fluid' src='/imagess/pluss.png' />
+                                                <img className='img-fluid'  src={`/imagess/${open2 ? "minus" : "pluss"}.png`} />
                                             </div>
                                         </div>
+                                        </div>
+                                        <Collapse in={open2} className='mt-2 px-3'>
+                                            <div id="example-collapse-text ">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                                                labore wes anderson cred nesciunt sapiente ea proident.
+                                            </div>
+                                        </Collapse>
                                     </div>
-                                    <div className='col-md-12 mt-4 background_card_new11 px-3 py-2 bg-white'>
+                                    <div className='col-md-12 background_card_new11 mt-4   bg-white'
+                                        onClick={() => setOpen3(!open3)}
+                                        aria-controls="example-collapse-text"
+                                        aria-expanded={open3}
+                                    >
+                                        <div className={`col-md-12 ${open3 ? "background_active_drop" : ""} py-2 px-3`}>
                                         <div className='row'>
                                             <div className='col-md-8 col-10 m-auto'>
                                                 <p className='m-0 p-0 new_c_text'>3. What Are The Objectives Of This Service?</p>
                                             </div>
                                             <div className='col-md-4 col-2 text-end'>
-                                                <img className='img-fluid' src='/imagess/pluss.png' />
+                                                <img className='img-fluid'  src={`/imagess/${open3 ? "minus" : "pluss"}.png`} />
                                             </div>
                                         </div>
+                                        </div>
+                                        <Collapse in={open3} className='mt-2 px-3'>
+                                            <div id="example-collapse-text ">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                                                labore wes anderson cred nesciunt sapiente ea proident.
+                                            </div>
+                                        </Collapse>
                                     </div>
-                                    <div className='col-md-12 mt-4 background_card_new11 px-3 py-2 bg-white'>
+                                    <div className='col-md-12 background_card_new11 mt-4   bg-white'
+                                        onClick={() => setOpen4(!open4)}
+                                        aria-controls="example-collapse-text"
+                                        aria-expanded={open4}
+                                    >
+                                        <div className={`col-md-12 ${open4 ? "background_active_drop" : ""} py-2 px-3`}>
                                         <div className='row'>
-                                            <div className='col-md-8 col-10 m-auto' >
+                                            <div className='col-md-8 col-10 m-auto'>
                                                 <p className='m-0 p-0 new_c_text'>4. What Is A Multi-currency Card?</p>
                                             </div>
                                             <div className='col-md-4 col-2 text-end'>
-                                                <img className='img-fluid' src='/imagess/pluss.png' />
+                                                <img className='img-fluid'  src={`/imagess/${open4 ? "minus" : "pluss"}.png`} />
                                             </div>
                                         </div>
+                                        </div>
+                                        <Collapse in={open4} className='mt-2 px-3'>
+                                            <div id="example-collapse-text ">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                                                labore wes anderson cred nesciunt sapiente ea proident.
+                                            </div>
+                                        </Collapse>
                                     </div>
-                                    <div className='col-md-12 mt-4 background_card_new11 px-3 py-2 bg-white'>
+                                    <div className='col-md-12 background_card_new11 mt-4   bg-white'
+                                        onClick={() => setOpen5(!open5)}
+                                        aria-controls="example-collapse-text"
+                                        aria-expanded={open5}
+                                    >
+                                        <div className={`col-md-12 ${open5 ? "background_active_drop" : ""} py-2 px-3`}>
                                         <div className='row'>
                                             <div className='col-md-8 col-10 m-auto'>
                                                 <p className='m-0 p-0 new_c_text'>5. What Is The Best Features And Services We Deliver?</p>
                                             </div>
                                             <div className='col-md-4 col-2 text-end'>
-                                                <img className='img-fluid' src='/imagess/pluss.png' />
+                                                <img className='img-fluid'  src={`/imagess/${open5 ? "minus" : "pluss"}.png`} />
                                             </div>
                                         </div>
+                                        </div>
+                                        <Collapse in={open5} className='mt-2 px-3'>
+                                            <div id="example-collapse-text ">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                                                labore wes anderson cred nesciunt sapiente ea proident.
+                                            </div>
+                                        </Collapse>
                                     </div>
-                                    <div className='col-md-12 mt-4 background_card_new11 px-3 py-2 bg-white'>
+                                    <div className='col-md-12 background_card_new11 mt-4   bg-white'
+                                        onClick={() => setOpen6(!open6)}
+                                        aria-controls="example-collapse-text"
+                                        aria-expanded={open6}
+                                    >
+                                        <div className={`col-md-12 ${open6 ? "background_active_drop" : ""} py-2 px-3`}>
                                         <div className='row'>
                                             <div className='col-md-8 col-10 m-auto'>
                                                 <p className='m-0 p-0 new_c_text'>6. What Happened To The Borderless Account?</p>
                                             </div>
                                             <div className='col-md-4 col-2 text-end'>
-                                                <img className='img-fluid' src='/imagess/pluss.png' />
+                                                <img className='img-fluid'  src={`/imagess/${open6 ? "minus" : "pluss"}.png`} />
                                             </div>
                                         </div>
+                                        </div>
+                                        <Collapse in={open6} className='mt-2 px-3'>
+                                            <div id="example-collapse-text ">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                                                labore wes anderson cred nesciunt sapiente ea proident.
+                                            </div>
+                                        </Collapse>
                                     </div>
+                                   
                                 </div>
                                 <div className='col-md-12 position_new pe-0'>
                                     <img className='img-fluid wisth_circle' src='/imagess/side.png' />
@@ -308,7 +396,7 @@ function AllServices() {
 
 
                         </div>
-                       
+
                         <div className='col-md-12  background_header3 pt-5  px-md-5  pb-md-0 pb-5'>
                             <div className='row universal_padding'>
                                 <div className='col-md-6 px-md-4'>

@@ -9,22 +9,22 @@ function Footer() {
                 <div className='row'>
                     <div className='col-md-3'>
                         <img  className='img-fluid' src='/imagess/footerlogo.png' />
-                        <p className='footersub_text m-0 p-0 pt-3'>About Us</p>
-                        <p className='footersub_text m-0 p-0 pt-3'>Frequent Questions</p>
-                        <p className='footersub_text m-0 p-0 pt-3'>Contact Us</p>
+                        <p className='footersub_text m-0 p-0 pt-3'><Link className='link_style' href="/Aboutus">About Us</Link></p>
+                        <p className='footersub_text m-0 p-0 pt-3'><Link className='link_style' href="/FAQ">Frequent Questions</Link></p>
+                        <p className='footersub_text m-0 p-0 pt-3'><Link className='link_style' href="/Contactus">Contact Us</Link></p>
                     </div>
                     <div className='col-md-3'>
                     <p className='footersub_text1 m-0 p-0 '>Products</p>
-                        <p className='footersub_text m-0 p-0 pt-3'>Money Transfer</p>
-                        <p className='footersub_text m-0 p-0 pt-3'>Virtual Cards</p>
-                        <p className='footersub_text m-0 p-0 pt-3'>Currency Excahnge</p>
-                        <p className='footersub_text m-0 p-0 pt-3'>Foreign Accounts</p>
+                        <p className='footersub_text m-0 p-0 pt-3'><Link className='link_style' href="/Moneytransfer">Money Transfer</Link></p>
+                        <p className='footersub_text m-0 p-0 pt-3'><Link className='link_style' href="/Virtualcards">Virtual Cards</Link></p>
+                        <p className='footersub_text m-0 p-0 pt-3'><Link className='link_style' href="/Currencyexchange">Currency Excahnge</Link></p>
+                        <p className='footersub_text m-0 p-0 pt-3'><Link className='link_style' href="/">Foreign Accounts</Link></p>
                     </div>
                     <div className='col-md-3'>
                     <p className='footersub_text1 m-0 p-0 '>Important Links</p>
-                        <p className='footersub_text m-0 p-0 pt-3'>Blog</p>
-                        <p className='footersub_text m-0 p-0 pt-3'>Money Transfer</p>
-                        <p className='footersub_text m-0 p-0 pt-3'>Services</p>
+                        <p className='footersub_text m-0 p-0 pt-3'><Link className='link_style' href="/Blogs">Blog</Link></p>
+                        <p className='footersub_text m-0 p-0 pt-3'><Link className='link_style' href="/Moneytransfer">Money Transfer</Link></p>
+                        <p className='footersub_text m-0 p-0 pt-3'><Link className='link_style' href="/AllServices">Services</Link></p>
                     </div>
                     <div className='col-md-3'>
                     <p className='footersub_text1 m-0 p-0 '>Legal</p>

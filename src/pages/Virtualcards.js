@@ -35,15 +35,19 @@ function Virtualcards() {
             <div className='col-md-12 background_header1 universal_padding'>
               <div className='row pt-4'>
                 <div className='col-md-2 col-5'>
-                  <Link href="/">
+                  <Link href="/" className='link_style'>
                     <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
                   </Link>
                 </div>
                 <div className='col-md-1 pt-2 col-2'>
-                  <p className='m-0 p-0 font_header2'>Home</p>
+                  <Link href="/" className='link_style'>
+                                          <p className='m-0 p-0 font_header2'>Home</p>
+                                    </Link>
                 </div>
                 <div className='col-md-1 pt-2 col-2' >
-                  <p className='m-0 p-0 font_header2'>Blog</p>
+                    <Link href="/Blogs" className='link_style'>
+ <p className='m-0 p-0 font_header2'>Blog</p>
+</Link>
                 </div>
                 <div className='col-md-1 pt-2 col-3'>
                   <p className='m-0 p-0 font_header2'>Help Center</p>
@@ -148,7 +152,7 @@ function Virtualcards() {
                     </div>
                     <div className='row mt-3'>
                       <div className='col-md-1 col-1 px-0' data-aos="fade-left" data-aos-duration="5000">
-                        <img className='img-fluid' src='/imagess/onee.png' />
+                        <img className='img-fluid' src='/imagess/two.png' />
                       </div>
                       <div className='col-md-11 col-11'>
                         <p className='m-0 p-0 sub_head_new' data-aos="fade-left" data-aos-duration="4000">Identification</p>
@@ -158,7 +162,7 @@ function Virtualcards() {
                     </div>
                     <div className='row mt-3'>
                       <div className='col-md-1 col-1 px-0'>
-                        <img className='img-fluid' src='/imagess/onee.png' />
+                        <img className='img-fluid' src='/imagess/three.png' />
                       </div>
                       <div className='col-md-11 col-11' data-aos="fade-left" data-aos-duration="5000">
                         <p className='m-0 p-0 sub_head_new' data-aos="fade-left" data-aos-duration="4000">Address information</p>

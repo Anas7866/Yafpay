@@ -36,15 +36,19 @@ function Privacypolicy() {
                     <div className='col-md-12 background_headerpp universal_padding'>
                         <div className='row pt-4'>
                             <div className='col-md-2 col-5'>
-                                <Link href="/">
+                                <Link href="/" className='link_style'>
                                     <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
                                 </Link>
                             </div>
                             <div className='col-md-1 pt-2 col-2'>
-                                <p className='m-0 p-0 font_header2'>Home</p>
+                                <Link href="/" className='link_style'>
+                                          <p className='m-0 p-0 font_header2'>Home</p>
+                                    </Link>
                             </div>
                             <div className='col-md-1 pt-2 col-2' >
-                                <p className='m-0 p-0 font_header2'>Blog</p>
+                                  <Link href="/Blogs" className='link_style'>
+ <p className='m-0 p-0 font_header2'>Blog</p>
+</Link>
                             </div>
                             <div className='col-md-1 pt-2 col-3'>
                                 <p className='m-0 p-0 font_header2'>Help Center</p>

@@ -36,15 +36,19 @@ function Termsofuse() {
                     <div className='col-md-12 background_headerpp universal_padding'>
                         <div className='row pt-4'>
                             <div className='col-md-2 col-5'>
-                                <Link href="/">
+                                <Link href="/" className='link_style'>
                                     <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
                                 </Link>
                             </div>
                             <div className='col-md-1 pt-2 col-2'>
-                                <p className='m-0 p-0 font_header2'>Home</p>
+                                <Link href="/" className='link_style'>
+                                          <p className='m-0 p-0 font_header2'>Home</p>
+                                    </Link>
                             </div>
                             <div className='col-md-1 pt-2 col-2' >
-                                <p className='m-0 p-0 font_header2'>Blog</p>
+                                  <Link href="/Blogs" className='link_style'>
+ <p className='m-0 p-0 font_header2'>Blog</p>
+</Link>
                             </div>
                             <div className='col-md-1 pt-2 col-3'>
                                 <p className='m-0 p-0 font_header2'>Help Center</p>
@@ -324,6 +328,186 @@ function Termsofuse() {
 
                         </p>
 
+
+                    </div>
+
+                    <div className='col-md-12 universal_padding mt-5'>
+                        <p className='m-0 p-0 yapay_head'>ERRORS
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            With regard to your Yafpay Account, the following are considered Errors:
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            <ul className='mb-0'>
+                                <li>When money is either incorrectly withdrawn from your Yafpay Account or incorrectly deposited into your Yafpay Account, or when a transaction or Transfer is incorrectly recorded in your Yafpay Account;
+                                </li>
+                                <li>You send money to a third party or withdraw money, and the incorrect amount is debited from your Yafpay Account;
+                                </li>
+                                <li>An incorrect amount is credited to your Yafpay Account;
+                                </li>
+                                <li>A transfer to or from your Yafpay Account is missing from or not properly identified in your Yafpay Account statement;
+                                </li>
+                                <li>We make a computational or mathematical error related to your Yafpay Account or currency you have converted;
+                                </li>
+                                <li>
+                                    You request additional information or clarification concerning a transfer to or from your Yafpay Account, including a request you make to determine whether an error has occurred;
+
+                                </li>
+                                <li>You inquire about the status of a pending transfer to or from your Yafpay Account.
+                                </li>
+                            </ul>
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            If you believe an Error of the type described above has occurred with respect to your Yafpay Account, and you duly contact us in accordance with the information above, we will investigate and determine whether an error occurred within ten (10) Business Days after we hear from you and will correct any error promptly. If we need more time, however, we may take up to 45 days to investigate your complaint or question. If we decide to do this, we will credit your Yafpay Account within ten (10) Business Days for the amount you think is in error, so that you will have the use of the money during the time it takes us to complete our investigation.
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            We will rectify any Errors that we discover. If the Error results in:
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            <ul className='mb-0'>
+                                <li>
+                                    You receiving less than the correct amount to which you were entitled, then we will credit your Yafpay Account for the difference between what you should have received and what you actually received.
+
+                                </li>
+                                <li>You receiving more than the correct amount to which you were entitled, then we will debit your Yafpay Account for the difference between what you actually received and what you should have received.
+                                </li>
+                                <li>Our not completing a transaction on time or in the correct amount, then we will be responsible to you for your losses or damages directly caused by this failure, unless:
+                                </li>
+                                <li>through no fault of ours, you did not have enough available funds to complete the transaction;
+                                </li>
+                                <li>our system was not working properly and you knew about the breakdown when you started the transaction; or
+                                </li>
+                                <li>the error was due to extraordinary circumstances outside our control (such as fire, flood or loss of Internet connection), despite our reasonable precautions.
+                                </li>
+                            </ul>
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            The following are not considered Errors:
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            <ul className='mb-0'>
+                                <li>If you give someone access to your Yafpay Account (by giving them your login information) and they use your Yafpay Account without your knowledge or permission. You are responsible for transactions made in this situation;
+                                </li>
+                                <li>Invalidation and reversal of a payment or transaction as a result of the actions described under Reversals and Chargebacks;
+                                </li>
+                                <li>Routine inquiries about your Yafpay Account balance;
+                                </li>
+                                <li>Requests for duplicate documentation or other information for recordkeeping purposes;
+                                </li>
+                                <li>An inquiry about the status of a currency conversion order (except where the funds from the order were not made available to the recipient by the disclosed date of availability);
+                                </li>
+                                <li>A change requested by the recipient of funds sent from you;
+                                </li>
+                                <li>A change in the amount or type of currency received by a designated recipient from the amount or type of currency stated in the disclosure provided you, if we relied on information provided by you in making the disclosure;
+                                </li>
+                                <li>Delays that result from Yafpay applying holds or limitations. Our decision about holds or limitations may be based on confidential risk management procedures and the protection of Yafpay, our customers and/or service providers. In addition, we may be restricted by regulation or a governmental authority from disclosing certain information to you about such decisions. We have no obligation to disclose the details of our risk management or security procedures to you;
+                                </li>
+                                <li>Delays based on a review of a potentially high-risk transaction;
+                                </li>
+                                <li>Your errors in making a transaction (for example, mistyping an amount of money that you are sending or choosing an incorrect destination Currency).
+                                </li>
+                                <li>Delays due to actions of third parties (e.g, your or a recipient's bank)
+                                </li>
+                            </ul>
+                        </p>
+
+
+                    </div>
+                    <div className='col-md-12 universal_padding mt-5'>
+                        <p className='m-0 p-0 yapay_head'>SEVERABLITY
+
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            The invalidity, illegality or unenforceability of any of the provisions of this Agreement shall not affect the validity, legality and enforceability of the remaining provisions of this Agreement.
+                        </p>
+
+
+                    </div>
+
+                    <div className='col-md-12 universal_padding mt-5'>
+                        <p className='m-0 p-0 yapay_head'>ASSIGNMENT
+
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            You hereby agree that we may assign, transfer, sub-contract or otherwise deal with our rights and/or obligations under these terms and conditions.
+                            Without our prior written consent, you may not assign, transfer, sub-contract, or otherwise deal with any of your rights and/or obligations under these terms and conditions.
+                        </p>
+
+
+                    </div>
+
+                    <div className='col-md-12 universal_padding mt-5'>
+                        <p className='m-0 p-0 yapay_head'>REVERSALS AND CHARGEBACKS
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            If you receive a payment that is later refunded or invalidated for any reason, you are responsible for the full amount of the payment sent to you plus any fees (including any applicable chargeback fee described below). Whenever a transaction is reversed, Yafpay will refund or reverse the transaction from your Yafpay Account in the same currency as the original transaction. If your Yafpay Account balance for a particular currency is insufficient to cover the amount of a refund or reversal, Yafpay will perform a currency conversion in order to refund or reverse the transaction, subject to the exchange rate being offered by Yafpay in the applicable currencies at that time.
+                            If you receive a debit or credit card-funded payment through your Yafpay Account and you (or a third party) pursue a chargeback for the transaction with the card issuer, then Yafpay may assess you with a chargeback fee (for facilitating the chargeback process) and will remove the charged back funds from your Yafpay account.
+                            Payments to you may be invalidated and reversed by Yafpay if:
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            <ul className='mb-0'>
+                                <li>Our investigation of a bank reversal finds that the transaction was fraudulent.
+                                </li>
+                                <li>Yafpay sent the payment to you in error.
+                                </li>
+                                <li>The payment was unauthorized.
+                                </li>
+                                <li>You received the payment for activities that violated this Agreement, the Acceptable Use Policy, or any other agreement between you and Yafpay.
+                                </li>
+                            </ul>
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            When you receive a payment, you are liable to Yafpay for the full amount of the payment sent to you plus any fees if the payment is later invalidated for any reason.
+                            If your Yafpay Account goes into a negative amount, including as a result of a chargeback, reversal of a transaction, deduction of fees or any other action carried by you or a third party, that negative amount represents an amount you owe to Yafpay and you promise to repay the negative amount immediately without any notice from us. We may send you reminders or take such other reasonable actions to recover the negative amount from you, for example, we may use a debt collection service or take further legal actions. We may charge you for any costs we may incur as a result of these collection efforts.
+                        </p>
+
+
+                    </div>
+
+
+                    <div className='col-md-12 universal_padding mt-5'>
+                        <p className='m-0 p-0 yapay_head'>UPDATES, MODIFICATION & ADJUSTMENTS
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            Yafpay reserves the right to change, revise or modify these Terms from time to time by updating this page. The changes will not be retroactive, and the most current version of the Terms will always be on this page and will continue to govern our relationship with you. We will also try to notify you of any material changes which could be done via the email associated with your account or service notification. By continuing to use our services after the changes become effective, you agree to be bound by the revised Terms.
+                        </p>
+
+
+                    </div>
+
+                    <div className='col-md-12 universal_padding mt-5'>
+                        <p className='m-0 p-0 yapay_head'>THIRD-PARTY MATERIALS
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            Certain Website or App functionality may make available access to information, products, services and other materials made available by third parties (“Third Party Materials”), or allow for the routing or transmission of such Third Party Materials, including via links. By using such functionality, you are directing us to access, route and transmit to you the applicable Third Party Materials.
+                            Any access or consent you give to such third-party materials is an agreement between you and it, we will have no liability for any loss whatsoever, as a result of any such agreement. We neither control nor endorse, nor are we responsible for, any Third Party Materials, including the accuracy, validity, timeliness, completeness, reliability, integrity, quality, legality, usefulness or safety of Third Party Materials, or any intellectual property rights therein. Certain Third Party Materials may, among other things, be inaccurate, misleading or deceptive. Nothing in this Agreement shall be deemed to be a representation or warranty by us with respect to any Third Party Materials. We have no obligation to monitor Third Party Materials, and we may block or disable access to any Third Party Materials (in whole or part) through the Website or App at any time. In addition, the availability of any Third Party Materials through the Website or App does not imply our endorsement of, or our affiliation with, any provider of such Third Party Materials, nor does such availability create any legal relationship between you and any such provider.
+                            Your use of Third Party Materials is at your own risk and is subject to any additional terms, conditions and policies applicable to such Third Party Materials (such as terms of service or privacy policies of the providers of such Third Party Materials).
+                        </p>
+
+
+                    </div>
+
+                    <div className='col-md-12 universal_padding mt-5'>
+                        <p className='m-0 p-0 yapay_head'>GOVERNING LAW
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            The formation, existence, construction, performance, validity and all aspects whatsoever of this Terms of Service or of any term of this Agreement will be governed by the Laws of the United States of America.
+                             </p>
+
+
+                    </div>
+
+                    <div className='col-md-12 universal_padding mt-5'>
+                        <p className='m-0 p-0 yapay_head'>CONTACT US</p>
+                        <p className='m-0 p-0 yapay_head1'>
+                        If you have any questions, comments, or concerns with respect to your Personal Information or this Privacy Policy, you may contact us by:
+                        </p>
+                        <p className='m-0 p-0 yapay_head1'>
+                            <ul className='mb-0'>
+                                <li>reaching out to the customer service support available on the website.</li>
+                                <li>sending an email to support@yafpay.com</li>
+                            </ul>
+                        </p>
                     </div>
 
 

@@ -36,15 +36,19 @@ function Aboutus() {
                         <div className='col-md-12 background_headerpp universal_padding'>
                             <div className='row pt-4'>
                                 <div className='col-md-2 col-5'>
-                                    <Link href="/">
+                                    <Link href="/" className='link_style'>
                                         <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2'>
-                                    <p className='m-0 p-0 font_header2'>Home</p>
+                                    <Link href="/" className='link_style'>
+                                          <p className='m-0 p-0 font_header2'>Home</p>
+                                    </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2' >
-                                    <p className='m-0 p-0 font_header2'>Blog</p>
+                                      <Link href="/Blogs" className='link_style'>
+ <p className='m-0 p-0 font_header2'>Blog</p>
+</Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-3'>
                                     <p className='m-0 p-0 font_header2'>Help Center</p>
@@ -84,8 +88,10 @@ function Aboutus() {
                                                 Anywhere In The World.</p>
                                         </div>
                                         <div className='col-md-12 text-start'>
-                                            <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua.</p>
+                                            <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">
+                                                Welcome to YafPay, where financial convenience knows no bounds. With our innovative banking app, YafPay, you can seamlessly transfer and deposit money anytime, anywhere in the world, putting the power of global transactions in the palm of your hand. We offer the following services:
+
+                                            </p>
                                             <div className='row'>
                                                 <div className='col-md-6'>
                                                     <div className='row mt-3'>
@@ -170,8 +176,9 @@ function Aboutus() {
                                             </div>
                                             <div className='col-md-10 col-10 ps-0 carddd'>
                                                 <p className='m-0 p-0'>Global Coverage</p>
-                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                                                    incididunt ut labore et dolore magna aliqua.</p>
+                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">
+                                                    Experience limitless financial possibilities with YafPay's global coverage, ensuring you can manage your money seamlessly across borders, without constraints or limitations.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -184,8 +191,9 @@ function Aboutus() {
                                             </div>
                                             <div className='col-md-10 col-10 ps-0 carddd'>
                                                 <p className='m-0 p-0'>Lowest Fee</p>
-                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                                                    incididunt ut labore et dolore magna aliqua.</p>
+                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">
+                                                    Unlock the advantage of the lowest fees in the industry with YafPay, ensuring you get the most from your money while enjoying a cost-effective and efficient banking experience.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -198,8 +206,9 @@ function Aboutus() {
                                             </div>
                                             <div className='col-md-10 col-10 ps-0 carddd'>
                                                 <p className='m-0 p-0'>Simple Transfer Methods</p>
-                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                                                    incididunt ut labore et dolore magna aliqua.</p>
+                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">
+                                                    Easily send money anywhere with YafPay. Our system is straightforward and easy to use, ensuring your transactions are simple and hassle-free.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -212,8 +221,9 @@ function Aboutus() {
                                             </div>
                                             <div className='col-md-10 col-10 ps-0 carddd'>
                                                 <p className='m-0 p-0'>Instant Processing</p>
-                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                                                    incididunt ut labore et dolore magna aliqua.</p>
+                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">
+                                                    Experience swift results with YafPay, where your transactions are processed instantly, giving you the speed and efficiency you need for seamless banking.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -226,8 +236,9 @@ function Aboutus() {
                                             </div>
                                             <div className='col-md-10 col-10 ps-0 carddd'>
                                                 <p className='m-0 p-0'>Bank-level Security</p>
-                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                                                    incididunt ut labore et dolore magna aliqua.</p>
+                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">
+                                                    Trust YafPay to prioritize your security. We implement bank-level measures to ensure your financial information is protected and your transactions remain confidential.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -240,8 +251,9 @@ function Aboutus() {
                                             </div>
                                             <div className='col-md-10 col-10 ps-0 carddd'>
                                                 <p className='m-0 p-0'>Global 24/7 Support</p>
-                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                                                    incididunt ut labore et dolore magna aliqua.</p>
+                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">
+                                                    Count on YafPay for round-the-clock support, ensuring assistance is always at your fingertips whenever you need it. Our commitment to your satisfaction knows no time constraints.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -257,9 +269,7 @@ function Aboutus() {
                                     <div className='col-md-12  text-start'>
                                         <p className='font_GBP mb-0' data-aos="zoom-in-up" data-aos-duration="4000">A Fully Integrated Suite Of Every Product Payments</p>
                                         <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
-                                            There are many variations of passages of Lorem Ipsum amet avoilble but majority
-                                            have suffered alteration in some form, by injected humur or randomise words which
-                                            don't sure amet sit dolor quras alto lorem.
+                                            Discover the power of YafPay as a unified platform, seamlessly integrating a comprehensive suite of payment products. From transfers to deposits, YafPay is your all-in-one solution, simplifying your financial experience with a fully integrated suite of products.
                                         </p>
                                     </div>
                                     <div className='row mt-4'>
