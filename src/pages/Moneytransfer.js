@@ -10,6 +10,7 @@ import { useEffect } from 'react'
 import Header from '@/Components/Header/Header'
 import LoaderUniversal from '@/Components/LoaderUniversal/LoaderUniversal'
 import Link from 'next/link'
+import MobileHeader from '@/Components/MobileHeader/MobileHeader'
 
 function Moneytransfer() {
     useEffect(() => {
@@ -33,26 +34,31 @@ function Moneytransfer() {
                     <LanguageHeader />
                     <div className='col-md-12 background_color_universal'>
                         <div className='col-md-12 background_header1 universal_padding'>
-                            <div className='row pt-4'>
+                            <div className='row display_pc pt-4'>
                                 <div className='col-md-2 col-5'>
                                     <Link href="/" className='link_style'>
-                                        <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
+                                        <img className='img-fluid width_gp_l' src='/imagess/logo.webp' />
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2'>
                                     <Link href="/" className='link_style'>
-                                          <p className='m-0 p-0 font_header2'>Home</p>
+                                        <p className='m-0 p-0 font_header2'>Home</p>
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2' >
-                                      <Link href="/Blogs" className='link_style'>
- <p className='m-0 p-0 font_header2'>Blog</p>
-</Link>
+                                    <Link href="/Blogs" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Blog</p>
+                                    </Link>
                                 </div>
-                                <div className='col-md-1 pt-2 col-3'>
-                                    <p className='m-0 p-0 font_header2'>Help Center</p>
+                               <div className='col-md-1 pt-2 col-3'>
+                                    <Link href="/helpcenter" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Help Center</p>
+                                    </Link>
                                 </div>
 
+                            </div>
+                            <div className='display_mob'>
+                                <MobileHeader />
                             </div>
                             <div className='col-md-12 mt-5 pb-5'>
                                 <div className='row'>
@@ -67,13 +73,13 @@ function Moneytransfer() {
                                             with ease.
                                         </p>
                                         <div className='col-md-12 mt-md-5 pt-4'>
-                                            <img className='img-fluid width_gp' src='/imagess/googleplay.png' data-aos="fade-right" data-aos-duration="4000" />
-                                            <img className='img-fluid ps-md-4 ps-2 width_gp' src='/imagess/apple.png' data-aos="fade-right" data-aos-duration="3000" />
+                                            <img className='img-fluid width_gp' src='/imagess/googleplay.webp' data-aos="fade-right" data-aos-duration="4000" />
+                                            <img className='img-fluid ps-md-4 ps-2 width_gp' src='/imagess/apple.webp' data-aos="fade-right" data-aos-duration="3000" />
                                         </div>
                                         <div className='col-md-12 mt-md-3 mt-4'>
                                             <div className='row'>
                                                 <div className='col-md-3 col-4 '>
-                                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/people.png' />
+                                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/people.webp' />
                                                 </div>
                                                 <div className='col-md-9 col-8 m-auto'>
                                                     <p className='m-0 p-0' data-aos="fade-left" data-aos-duration="3000"><span className='fivek'>500K+</span><span className='people ps-2'>People already trusted us.</span></p>
@@ -82,7 +88,7 @@ function Moneytransfer() {
                                         </div>
                                     </div>
                                     <div className='col-md-6 mt-md-0 mt-5 text-center'>
-                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/banner-m1.png' />
+                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/banner-m1.webp' />
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +103,7 @@ function Moneytransfer() {
                                 <div className='row mt-5 pt-4  pb-5' >
                                     <div className='col-md-6'>
                                         <div className='col-md-12'>
-                                            <img className='img-fluid' src='/imagess/banner-m2.png' />
+                                            <img className='img-fluid' src='/imagess/banner-m2.webp' />
                                         </div>
                                     </div>
                                     <div className='col-md-6 m-auto '>
@@ -106,13 +112,16 @@ function Moneytransfer() {
                                                 Anywhere In The World.</p>
                                         </div>
                                         <div className='col-md-12 text-start'>
-                                            <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                                                incididunt ut labore et dolore magna aliqua.</p>
+                                            <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">
+                                                "Take control of your financial transactions and experience seamless deposit
+                                                transfers on a global scale, all at your fingertips! Empower yourself with the
+                                                convenience and ease of our services today."
+                                            </p>
                                             <div className='row'>
                                                 <div className='col-md-6'>
                                                     <div className='row mt-3'>
                                                         <div className='col-md-2 col-1 '>
-                                                            <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                            <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                         </div>
                                                         <div className='col-md-10 ps-0 col-11 pt-1'>
                                                             <p className='m-0 p-0 subb_head ' data-aos="fade-right" data-aos-duration="3000">
@@ -122,7 +131,7 @@ function Moneytransfer() {
                                                     </div>
                                                     <div className='row mt-3'>
                                                         <div className='col-md-2 col-1 '>
-                                                            <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                            <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                         </div>
                                                         <div className='col-md-10 ps-0 col-11 pt-1'>
                                                             <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000">
@@ -132,7 +141,7 @@ function Moneytransfer() {
                                                     </div>
                                                     <div className='row mt-3'>
                                                         <div className='col-md-2 col-1 '>
-                                                            <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                            <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                         </div>
                                                         <div className='col-md-10 ps-0 col-11 pt-1'>
                                                             <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000" >
@@ -144,7 +153,7 @@ function Moneytransfer() {
                                                 <div className='col-md-6'>
                                                     <div className='row mt-3'>
                                                         <div className='col-md-2 col-1 '>
-                                                            <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                            <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                         </div>
                                                         <div className='col-md-10 ps-0 col-11 pt-1'>
                                                             <p className='m-0 p-0 subb_head ' data-aos="fade-right" data-aos-duration="3000">
@@ -154,7 +163,7 @@ function Moneytransfer() {
                                                     </div>
                                                     <div className='row mt-3'>
                                                         <div className='col-md-2 col-1 '>
-                                                            <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                            <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                         </div>
                                                         <div className='col-md-10 ps-0 col-11 pt-1'>
                                                             <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000">
@@ -164,7 +173,7 @@ function Moneytransfer() {
                                                     </div>
                                                     <div className='row mt-3'>
                                                         <div className='col-md-2 col-1 '>
-                                                            <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                            <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                         </div>
                                                         <div className='col-md-10 ps-0 col-11 pt-1'>
                                                             <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000" >
@@ -188,7 +197,7 @@ function Moneytransfer() {
                                         <div className='col-md-1 col-1 px-0'>
                                             <img className='img-fluid'
                                                 data-aos="fade-right" data-aos-duration="4000"
-                                                src='/imagess/one.png' />
+                                                src='/imagess/one.webp' />
                                         </div>
                                         <div className='col-md-11 col-11'>
                                             <p className='m-0 p-0 register_text' data-aos="fade-right" data-aos-duration="4000" >Register in minutes</p>
@@ -204,7 +213,7 @@ function Moneytransfer() {
                                         <div className='col-md-1 col-1 px-0'>
                                             <img className='img-fluid'
                                                 data-aos="fade-right" data-aos-duration="4000"
-                                                src='/imagess/one.png' />
+                                                src='/imagess/one.webp' />
                                         </div>
                                         <div className='col-md-11 col-11'>
                                             <p className='m-0 p-0 register_text' data-aos="fade-right" data-aos-duration="4000" >Complete KYC verifications</p>
@@ -220,7 +229,7 @@ function Moneytransfer() {
                                         <div className='col-md-1 col-1 px-0'>
                                             <img className='img-fluid'
                                                 data-aos="fade-right" data-aos-duration="4000"
-                                                src='/imagess/one.png' />
+                                                src='/imagess/one.webp' />
                                         </div>
                                         <div className='col-md-11 col-11'>
                                             <p className='m-0 p-0 register_text' data-aos="fade-right" data-aos-duration="4000" >Get your virtual account</p>
@@ -233,48 +242,50 @@ function Moneytransfer() {
                                 </div>
                             </div>
                             <div className='col-md-12 mt-5 px-2 px-md-0'>
-                                <img className='img-fluid' data-aos="fade-right" data-aos-duration="3000" src='/imagess/register.png' />
+                                <img className='img-fluid' data-aos="fade-right" data-aos-duration="3000" src='/imagess/register.webp' />
                             </div>
                         </div>
                         <div className='col-md-12  background_header3 pt-5  '>
                             <div className='row universal_padding'>
                                 <div className='col-md-6'>
-                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/girls.png' />
+                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/girls.webp' />
                                 </div>
                                 <div className='col-md-6 m-md-auto mt-5 ps-4 px-md-0'>
                                     <div className='col-md-12  text-start'>
                                         <p className='font_GBP mb-0' data-aos="zoom-in-up" data-aos-duration="4000">A Fully Integrated Suite Of Every Product Payments</p>
                                         <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
-                                            There are many variations of passages of Lorem Ipsum amet avoilble but majority
-                                            have suffered alteration in some form, by injected humur or randomise words which
-                                            don't sure amet sit dolor quras alto lorem.
+                                            Unlock Effortless Transactions: A Fully Integrated Suite of Every Product
+                                            Payment Method for your convenience.
+
                                         </p>
                                     </div>
                                     <div className='row mt-4'>
                                         <div className='col-md-6'>
                                             <div className='col-md-12'>
-                                                <img className='img-fluid' src='/imagess/kl.png' />
+                                                <img className='img-fluid' src='/imagess/kl.webp' />
                                                 <p className='m-0 p-0 split'>Split The Necessities</p>
                                                 <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
-                                                    There are many variations of passages of Lorem Ipsum amet avoilble but majority
-                                                    have suffered alteration in some form.
+                                                    Empower financial collaboration with YafPay's 'Split the Necessities' feature.
+                                                    Easily share expenses, simplify group payments, and enhance your financial
+                                                    teamwork. YafPay – where sharing is smart and seamless.
                                                 </p>
                                             </div>
                                         </div>
                                         <div className='col-md-6'>
                                             <div className='col-md-12'>
-                                                <img className='img-fluid' src='/imagess/ip.png' />
+                                                <img className='img-fluid' src='/imagess/ip.webp' />
                                                 <p className='m-0 p-0 split'>Pay For Business</p>
                                                 <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
-                                                    There are many variations of passages of Lorem Ipsum amet avoilble but majority
-                                                    have suffered alteration in some form.
+                                                    Supercharge your business with YafPay's 'Pay for Business.' Streamline
+                                                    transactions, boost efficiency, and power your success.
+
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-12 position_new pe-0'>
-                                    <img className='img-fluid wisth_circle' src='/imagess/side.png' />
+                                    <img className='img-fluid wisth_circle' src='/imagess/side.webp' />
                                 </div>
                             </div>
 
@@ -282,91 +293,90 @@ function Moneytransfer() {
                         </div>
                         <div className='col-md-12 background_header_linear_22 '>
                             <div className='text-center col-md-12'>
-                            <p className='font_GBP custom-distance-top' data-aos="zoom-in-up" data-aos-duration="4000">Resources to Help You Learn About YAFPAY</p>
+                                <p className='font_GBP custom-distance-top' data-aos="zoom-in-up" data-aos-duration="4000">Resources to Help You Learn About YAFPAY</p>
                             </div>
                             <div className='col-md-12 universal_padding mt-5 mb-5 pb-5'>
                                 <div className='row'>
                                     <div className='col-md-4 mt-4 mt-md-0'>
                                         <div className='col-md-12 px-md-3'>
                                             <div className='col-md-12 '>
-                                                <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
+                                                <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
                                                 <div className='row px-4 neg_mar_top'>
                                                     <div className='col-md-6 col-6'>
-                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.png' /> Muhammad Usman</p>
+                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
                                                     </div>
                                                     <div className='col-md-4 col-4 text-end'>
                                                         <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
                                                     </div>
                                                     <div className='col-md-2 col-2 text-end'>
-                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.png' /> 23</p>
+                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='col-md-12 mt-2 pe-md-5'>
-                                                <p className='m-0 p-0 font_cards pe-md-5'>Building a Positive Workplace
-                                                    Culture: A Foundation for Success</p>
+                                                <p className='m-0 p-0 font_cards pe-md-5'>Navigate the Financial Landscape
+                                                </p>
                                                 <p className='m-0 p-0 font_cards_para pe-md-5'>Have you ever been asked what your favorite thing
-                                                    about working at your company is? Depending on
-                                                    where you work, there are a few possible reasons.</p>
+                                                    Explore expert insights and industry trends for a deeper understanding of the
+                                                    financial world
+
+                                                </p>
                                             </div>
                                             <div className='col-md-12'>
-                                                <img className='img-fluid' src='/imagess/readmore.png' />
+                                                <img className='img-fluid' src='/imagess/readmore.webp' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='col-md-4 mt-4 mt-md-0'>
                                         <div className='col-md-12 px-md-3'>
                                             <div className='col-md-12 '>
-                                                <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
+                                                <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
                                                 <div className='row px-4 neg_mar_top'>
                                                     <div className='col-md-6 col-6'>
-                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.png' /> Muhammad Usman</p>
+                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
                                                     </div>
                                                     <div className='col-md-4 col-4 text-end'>
                                                         <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
                                                     </div>
                                                     <div className='col-md-2 col-2 text-end'>
-                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.png' /> 23</p>
+                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='col-md-12 mt-2 pe-md-5'>
-                                                <p className='m-0 p-0 font_cards pe-md-5'>Building a Positive Workplace
-                                                    Culture: A Foundation for Success</p>
-                                                <p className='m-0 p-0 font_cards_para pe-md-5'>Have you ever been asked what your favorite thing
-                                                    about working at your company is? Depending on
-                                                    where you work, there are a few possible reasons.</p>
+                                                <p className='m-0 p-0 font_cards pe-md-5'>Listen and Learn
+                                                </p>
+                                                <p className='m-0 p-0 font_cards_para pe-md-5'>Tune in to engaging podcasts for quick and insightful discussions on finance and
+                                                    technology</p>
                                             </div>
                                             <div className='col-md-12'>
-                                                <img className='img-fluid' src='/imagess/readmore.png' />
+                                                <img className='img-fluid' src='/imagess/readmore.webp' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='col-md-4 mt-4 mt-md-0'>
                                         <div className='col-md-12 px-md-3'>
                                             <div className='col-md-12 '>
-                                                <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
+                                                <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
                                                 <div className='row px-4 neg_mar_top'>
                                                     <div className='col-md-6 col-6'>
-                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.png' /> Muhammad Usman</p>
+                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
                                                     </div>
                                                     <div className='col-md-4 col-4 text-end'>
                                                         <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
                                                     </div>
                                                     <div className='col-md-2 col-2 text-end'>
-                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.png' /> 23</p>
+                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='col-md-12 mt-2 pe-md-5'>
-                                                <p className='m-0 p-0 font_cards pe-md-5'>Building a Positive Workplace
-                                                    Culture: A Foundation for Success</p>
-                                                <p className='m-0 p-0 font_cards_para pe-md-5'>Have you ever been asked what your favorite thing
-                                                    about working at your company is? Depending on
-                                                    where you work, there are a few possible reasons.</p>
+                                                <p className='m-0 p-0 font_cards pe-md-5'>Unlock Financial Wisdom</p>
+                                                <p className='m-0 p-0 font_cards_para pe-md-5'>Elevate your financial knowledge with bite-sized lessons and resources for
+                                                    ongoing learning.</p>
                                             </div>
                                             <div className='col-md-12'>
-                                                <img className='img-fluid' src='/imagess/readmore.png' />
+                                                <img className='img-fluid' src='/imagess/readmore.webp' />
                                             </div>
                                         </div>
                                     </div>
@@ -376,7 +386,7 @@ function Moneytransfer() {
                         <div className='col-md-12  background_header3 pt-5  px-md-5  pb-md-0 pb-5'>
                             <div className='row universal_padding'>
                                 <div className='col-md-6 px-md-4'>
-                                    <img className='img-fluid' src='/imagess/b4.png' data-aos="fade-right" data-aos-duration="6000" />
+                                    <img className='img-fluid' src='/imagess/b4.webp' data-aos="fade-right" data-aos-duration="6000" />
                                 </div>
                                 <div className='col-md-6 m-auto'>
                                     <p className='text_section5 mt-md-0 mt-5' data-aos="fade-left" data-aos-duration="5000">
@@ -384,8 +394,8 @@ function Moneytransfer() {
                                         banking benefits from anywhere
                                     </p>
                                     <div className='col-md-12  pt-4' data-aos="fade-left" data-aos-duration="3000">
-                                        <img className='img-fluid width_gp' src='/imagess/googleplay.png' />
-                                        <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.png' />
+                                        <img className='img-fluid width_gp' src='/imagess/googleplay.webp' />
+                                        <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.webp' />
                                     </div>
                                 </div>
 

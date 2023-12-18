@@ -6,12 +6,15 @@ import LanguageHeader from '@/Components/LanguageHeader/LanguageHeader'
 import Footer from '@/Components/Footer/Footer'
 import "aos/dist/aos.css";
 import Aos from "aos";
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Header from '@/Components/Header/Header'
 import LoaderUniversal from '@/Components/LoaderUniversal/LoaderUniversal'
 import Link from 'next/link'
+import Button from 'react-bootstrap/Button';
+import Collapse from 'react-bootstrap/Collapse';
+import MobileHeader from '@/Components/MobileHeader/MobileHeader'
 
-function Virtualcards() {
+function VirtualCards() {
   useEffect(() => {
     setTimeout(function () {
     }, 6000);
@@ -20,6 +23,14 @@ function Virtualcards() {
       easing: 'ease',
     });
   }, []);
+
+  const [open1, setOpen1] = useState(false);
+  const [open2, setOpen2] = useState(false);
+  const [open3, setOpen3] = useState(false);
+  const [open4, setOpen4] = useState(false);
+  const [open5, setOpen5] = useState(false);
+  const [open6, setOpen6] = useState(false);
+
   return (
     <>
       <Head>
@@ -33,47 +44,50 @@ function Virtualcards() {
           <LanguageHeader />
           <div className='col-md-12 background_color_universal'>
             <div className='col-md-12 background_header1 universal_padding'>
-              <div className='row pt-4'>
+              <div className='row display_pc pt-4'>
                 <div className='col-md-2 col-5'>
                   <Link href="/" className='link_style'>
-                    <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
+                    <img className='img-fluid width_gp_l' src='/imagess/logo.webp' />
                   </Link>
                 </div>
                 <div className='col-md-1 pt-2 col-2'>
                   <Link href="/" className='link_style'>
-                                          <p className='m-0 p-0 font_header2'>Home</p>
-                                    </Link>
+                    <p className='m-0 p-0 font_header2'>Home</p>
+                  </Link>
                 </div>
                 <div className='col-md-1 pt-2 col-2' >
-                    <Link href="/Blogs" className='link_style'>
- <p className='m-0 p-0 font_header2'>Blog</p>
-</Link>
+                  <Link href="/Blogs" className='link_style'>
+                    <p className='m-0 p-0 font_header2'>Blog</p>
+                  </Link>
                 </div>
                 <div className='col-md-1 pt-2 col-3'>
                   <p className='m-0 p-0 font_header2'>Help Center</p>
                 </div>
 
               </div>
+              <div className='display_mob'>
+                <MobileHeader />
+              </div>
               <div className='col-md-12 mt-5 pb-5'>
                 <div className='row'>
                   <div className='col-md-6 m-auto '>
                     <p className='m-0 p-0 banner1_heading' data-aos="fade-right" data-aos-duration="4000">
-                      Convert your money
-                      between currencies
-                      fast!
+                      An Easier Way to<br />
+                      Spend Globally
                     </p>
                     <p className='m-0 p-0 sub_heading_banner1 pt-3' data-aos="fade-right" data-aos-duration="3000">
-                      Receive payments from anywhere, and convert them to your local<br />
-                      currency or other currencies.
+                      Spend freely with a debit card that makes your international payments
+                      easier. Get a Grey virtual card to shop, or pay for subscriptions and
+                      gifts online anywhere in the world.
                     </p>
-                    <div className='col-md-12 mt-md-5 pt-4'>
-                      <img className='img-fluid width_gp' src='/imagess/googleplay.png' data-aos="fade-right" data-aos-duration="4000" />
-                      <img className='img-fluid ps-md-4 ps-2 width_gp' src='/imagess/apple.png' data-aos="fade-right" data-aos-duration="3000" />
+                    <div className='col-md-12 mt-md-1 pt-4'>
+                      <img className='img-fluid width_gp' src='/imagess/googleplay.webp' data-aos="fade-right" data-aos-duration="4000" />
+                      <img className='img-fluid ps-md-4 ps-2 width_gp' src='/imagess/apple.webp' data-aos="fade-right" data-aos-duration="3000" />
                     </div>
                     <div className='col-md-12 mt-md-3 mt-4'>
                       <div className='row'>
                         <div className='col-md-3 col-4 '>
-                          <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/people.png' />
+                          <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/people.webp' />
                         </div>
                         <div className='col-md-9 col-8 m-auto'>
                           <p className='m-0 p-0' data-aos="fade-left" data-aos-duration="3000"><span className='fivek'>500K+</span><span className='people ps-2'>People already trusted us.</span></p>
@@ -82,195 +96,95 @@ function Virtualcards() {
                     </div>
                   </div>
                   <div className='col-md-6 mt-md-0 mt-5 text-center'>
-                    <img className='img-fluid' data-aos="zoom-in" src='/imagess/banner-v1.png' />
+                    <img className='img-fluid' data-aos="zoom-in" src='/imagess/banner-v1.webp' />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className='col-md-12  background_header22 pt-5 mt-5 '>
-              <div className='col-md-12  text-center'>
-                <p className='font_GBP' data-aos="zoom-in-up" data-aos-duration="4000">Free USD, GBP and EUR accounts<br />
-                  for all your international transactions</p>
-              </div>
-              <div className='col-md-12 universal_padding_left'>
-                <div className='row mt-5 pt-4  pb-5' >
-                  <div className='col-md-6'>
-                    <div className='col-md-12 '>
-                      <img className='img-fluid' src='/imagess/ico1.png' data-aos="fade-right" data-aos-duration="4000" />
-                      <p className='m-0 p-0 heading_b2' data-aos="fade-right" data-aos-duration="3000">Send and receive money quickly</p>
-                      <p className='m-0 p-0 sub_heading_b2' data-aos="fade-right" data-aos-duration="3000">
-                        Enjoy fast global money transfer with your international bank<br />
-                        account on YAFPAY.
-                      </p>
-                      <img className='img-fluid mt-3' src='/imagess/start.png' data-aos="fade-right" data-aos-duration="4000" />
-                    </div>
-                    <div className='col-md-12 mt-3'>
-                      <img className='img-fluid' src='/imagess/ico2.png' data-aos="fade-right" data-aos-duration="4000" />
-                      <p className='m-0 p-0 heading_b2' data-aos="fade-right" data-aos-duration="3000">Instant currency exchange</p>
-                      <p className='m-0 p-0 sub_heading_b2' data-aos="fade-right" data-aos-duration="3000">
-                        Enjoy quick and efficient online foreign exchange transactions.<br />
-                        Say goodbye to bank queues and disappointments..
-                      </p>
-                      <img className='img-fluid mt-3' src='/imagess/start.png' data-aos="fade-right" data-aos-duration="4000" />
-                    </div>
-                    <div className='col-md-12 mt-3 mb-5'>
-                      <img className='img-fluid' src='/imagess/ico3.png' data-aos="fade-right" data-aos-duration="4000" />
-                      <p className='m-0 p-0 heading_b2' data-aos="fade-right" data-aos-duration="3000">Send and receive money quickly</p>
-                      <p className='m-0 p-0 sub_heading_b2' data-aos="fade-right" data-aos-duration="3000">
-                        Enjoy fast global money transfer with your international bank<br />
-                        account on YAFPAY.
-                      </p>
-                      <img className='img-fluid mt-3' src='/imagess/start.png' data-aos="fade-right" data-aos-duration="4000" />
-                    </div>
-                  </div>
-                  <div className='col-md-6 text-end mt-5 mt-md-0'>
-                    <img className='img-fluid' src='/imagess/banner2.png' data-aos="fade-left" data-aos-duration="4000" />
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div className='col-md-12  background_header22 pt-5  '>
+            <div className='col-md-12 mt-5 pt-5 mb-5 pb-5'>
               <div className='row universal_padding'>
-                <div className='col-md-6'>
-                  <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/banner-v2.png' />
-                </div>
                 <div className='col-md-6 m-auto'>
-                  <p className='text_section5 mt-md-0 mt-5' data-aos="fade-left" data-aos-duration="4000">We can easily open a YAFPAY account<br />
-                    by following some rules below.</p>
-                  <div className='col-md-12 px-md-3 px-2 mt-5' >
-                    <div className='row'>
-                      <div className='col-md-1 col-1 px-0'>
-                        <img className='img-fluid' src='/imagess/onee.png' data-aos="fade-left" data-aos-duration="5000" />
-                      </div>
-                      <div className='col-md-11 col-11'>
-                        <p className='m-0 p-0 sub_head_new' data-aos="fade-left" data-aos-duration="4000">Personal details</p>
-                        <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                          incididunt ut labore et dolore magna aliqua.</p>
+                  <div className='col-md-12  text-start'>
+                    <p className='font_GBP mb-0' data-aos="zoom-in-up" data-aos-duration="4000">Why people choose us</p>
+                    <p className='font_GBP3 mb-2' data-aos="zoom-in-up" data-aos-duration="4000">Banking Payments</p>
+                    <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
+                      There are many variations of passages of Lorem Ipsum amet avoilble but majority
+                      have suffered alteration in some form, by injected humur or randomise words which
+                      don't sure amet sit dolor quras alto lorem.
+                    </p>
+                    <p className=' mb-1 points_currency' data-aos="zoom-in-left" data-aos-duration="6000">
+                      Cards that work all across the world.
+                    </p>
+                    <p className=' mb-1 points_currency' data-aos="zoom-in-left" data-aos-duration="4000">
+                      Highest Returns on your investments.
+                    </p>
+                    <p className=' mb-1 points_currency ' data-aos="zoom-in-left" data-aos-duration="2000">
+                      No ATM fees. No minimum balance. No overdrafts.
+                    </p>
+                  </div>
+                  <div className='col-md-12 mt-4' data-aos="zoom-in-left" data-aos-duration="4000">
+                    <img className='img-fluid' src='/imagess/signup.webp' />
+                  </div>
+                </div>
+                <div className='col-md-6 text-center mt-5 mt-0'>
+                  <img className='img-fluid' src='/imagess/banner-v2.webp' />
+                </div>
+              </div>
+            </div>
+
+            <div className='col-md-12 mt-5 pt-5 mb-5 pb-5'>
+              <div className='row universal_padding_right'>
+                <div className='col-md-6 text-start'>
+                  <img className='img-fluid' src='/imagess/banner-c2.webp' />
+                </div>
+                <div className='col-md-6 m-md-auto mt-5 ps-4 px-md-0'>
+                  <div className='col-md-12  text-start'>
+                    <p className='font_GBP mb-0' data-aos="zoom-in-up" data-aos-duration="4000">Building a Positive Workplace Culture: A Foundation for Success
+                      Happy Team, Thriving Dream: Workplace vibes that beam</p>
+                    <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
+                      A happy crew makes success come true. When smiles fill the room, collaboration
+                      blooms. Cheerful faces, and shared spaces - that's how we pave the way for success
+                      in our day
+                    </p>
+                  </div>
+                  <div className='row mt-4'>
+                    <div className='col-md-6'>
+                      <div className='col-md-12'>
+                        <img className='img-fluid' src='/imagess/kl.webp' />
+                        <p className='m-0 p-0 split'>Teamwork Gleam: Building the Dream Team's Scheme</p>
+                        <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
+                          A happy team turns every goal into a gleam. When we unite, everything seems like
+                          a dream. Teamwork's the theme, success is the stream. In our workplace, it's more
+                          than just a scheme.
+                        </p>
                       </div>
                     </div>
-                    <div className='row mt-3'>
-                      <div className='col-md-1 col-1 px-0' data-aos="fade-left" data-aos-duration="5000">
-                        <img className='img-fluid' src='/imagess/two.png' />
-                      </div>
-                      <div className='col-md-11 col-11'>
-                        <p className='m-0 p-0 sub_head_new' data-aos="fade-left" data-aos-duration="4000">Identification</p>
-                        <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                          incididunt ut labore et dolore magna aliqua.</p>
-                      </div>
-                    </div>
-                    <div className='row mt-3'>
-                      <div className='col-md-1 col-1 px-0'>
-                        <img className='img-fluid' src='/imagess/three.png' />
-                      </div>
-                      <div className='col-md-11 col-11' data-aos="fade-left" data-aos-duration="5000">
-                        <p className='m-0 p-0 sub_head_new' data-aos="fade-left" data-aos-duration="4000">Address information</p>
-                        <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                          incididunt ut labore et dolore magna aliqua.</p>
+                    <div className='col-md-6'>
+                      <div className='col-md-12'>
+                        <img className='img-fluid' src='/imagess/ip.webp' />
+                        <p className='m-0 p-0 split'>Cultivating Success: Fostering a Positive Workplace Culture</p>
+                        <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
+                          Establishing a workplace culture of positivity is the cornerstone of a thriving and
+                          successful team. The synergy of content and motivated individuals propels us
+                          forward, ensuring collective success.
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
 
-            </div>
-            <div className='col-md-12 background_header_linear_22 pt-5'>
-              <p className='font_GBP custom-distance-top' data-aos="zoom-in-up" data-aos-duration="4000">Resources to Help You Learn About YAFPAY</p>
-              <div className='col-md-12 universal_padding mt-5 mb-5 pb-5'>
-                <div className='row'>
-                  <div className='col-md-4 mt-4 mt-md-0'>
-                    <div className='col-md-12 px-md-3'>
-                      <div className='col-md-12 '>
-                        <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
-                        <div className='row px-4 neg_mar_top'>
-                          <div className='col-md-6 col-6'>
-                            <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.png' /> Muhammad Usman</p>
-                          </div>
-                          <div className='col-md-4 col-4 text-end'>
-                            <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
-                          </div>
-                          <div className='col-md-2 col-2 text-end'>
-                            <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.png' /> 23</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='col-md-12 mt-2 pe-md-5'>
-                        <p className='m-0 p-0 font_cards pe-md-5'>Building a Positive Workplace
-                          Culture: A Foundation for Success</p>
-                        <p className='m-0 p-0 font_cards_para pe-md-5'>Have you ever been asked what your favorite thing
-                          about working at your company is? Depending on
-                          where you work, there are a few possible reasons.</p>
-                      </div>
-                      <div className='col-md-12'>
-                        <img className='img-fluid' src='/imagess/readmore.png' />
-                      </div>
-                    </div>
-                  </div>
-                  <div className='col-md-4 mt-4 mt-md-0'>
-                    <div className='col-md-12 px-md-3'>
-                      <div className='col-md-12 '>
-                        <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
-                        <div className='row px-4 neg_mar_top'>
-                          <div className='col-md-6 col-6'>
-                            <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.png' /> Muhammad Usman</p>
-                          </div>
-                          <div className='col-md-4 col-4 text-end'>
-                            <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
-                          </div>
-                          <div className='col-md-2 col-2 text-end'>
-                            <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.png' /> 23</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='col-md-12 mt-2 pe-md-5'>
-                        <p className='m-0 p-0 font_cards pe-md-5'>Building a Positive Workplace
-                          Culture: A Foundation for Success</p>
-                        <p className='m-0 p-0 font_cards_para pe-md-5'>Have you ever been asked what your favorite thing
-                          about working at your company is? Depending on
-                          where you work, there are a few possible reasons.</p>
-                      </div>
-                      <div className='col-md-12'>
-                        <img className='img-fluid' src='/imagess/readmore.png' />
-                      </div>
-                    </div>
-                  </div>
-                  <div className='col-md-4 mt-4 mt-md-0'>
-                    <div className='col-md-12 px-md-3'>
-                      <div className='col-md-12 '>
-                        <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
-                        <div className='row px-4 neg_mar_top'>
-                          <div className='col-md-6 col-6'>
-                            <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.png' /> Muhammad Usman</p>
-                          </div>
-                          <div className='col-md-4 col-4 text-end'>
-                            <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
-                          </div>
-                          <div className='col-md-2 col-2 text-end'>
-                            <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.png' /> 23</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className='col-md-12 mt-2 pe-md-5'>
-                        <p className='m-0 p-0 font_cards pe-md-5'>Building a Positive Workplace
-                          Culture: A Foundation for Success</p>
-                        <p className='m-0 p-0 font_cards_para pe-md-5'>Have you ever been asked what your favorite thing
-                          about working at your company is? Depending on
-                          where you work, there are a few possible reasons.</p>
-                      </div>
-                      <div className='col-md-12'>
-                        <img className='img-fluid' src='/imagess/readmore.png' />
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
+
+
+            
+
             <div className='col-md-12  background_header3 pt-5  px-md-5  pb-md-0 pb-5'>
               <div className='row universal_padding'>
                 <div className='col-md-6 px-md-4'>
-                  <img className='img-fluid' src='/imagess/b4.png' data-aos="fade-right" data-aos-duration="6000" />
+                  <img className='img-fluid' src='/imagess/b4.webp' data-aos="fade-right" data-aos-duration="6000" />
                 </div>
                 <div className='col-md-6 m-auto'>
                   <p className='text_section5 mt-md-0 mt-5' data-aos="fade-left" data-aos-duration="5000">
@@ -278,8 +192,8 @@ function Virtualcards() {
                     banking benefits from anywhere
                   </p>
                   <div className='col-md-12  pt-4' data-aos="fade-left" data-aos-duration="3000">
-                    <img className='img-fluid width_gp' src='/imagess/googleplay.png' />
-                    <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.png' />
+                    <img className='img-fluid width_gp' src='/imagess/googleplay.webp' />
+                    <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.webp' />
                   </div>
                 </div>
 
@@ -295,4 +209,4 @@ function Virtualcards() {
   )
 }
 
-export default Virtualcards
+export default VirtualCards

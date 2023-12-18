@@ -46,21 +46,23 @@ function AllServices() {
                             <div className='row pt-4'>
                                 <div className='col-md-2 col-5'>
                                     <Link href="/" className='link_style'>
-                                        <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
+                                        <img className='img-fluid width_gp_l' src='/imagess/logo.webp' />
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2'>
                                     <Link href="/" className='link_style'>
-                                          <p className='m-0 p-0 font_header2'>Home</p>
+                                        <p className='m-0 p-0 font_header2'>Home</p>
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2' >
-                                      <Link href="/Blogs" className='link_style'>
- <p className='m-0 p-0 font_header2'>Blog</p>
-</Link>
+                                    <Link href="/Blogs" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Blog</p>
+                                    </Link>
                                 </div>
-                                <div className='col-md-1 pt-2 col-3'>
-                                    <p className='m-0 p-0 font_header2'>Help Center</p>
+                               <div className='col-md-1 pt-2 col-3'>
+                                    <Link href="/helpcenter" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Help Center</p>
+                                    </Link>
                                 </div>
 
                             </div>
@@ -76,13 +78,13 @@ function AllServices() {
                                             foreign payments or convert currencies, all in one place
                                         </p>
                                         <div className='col-md-12 mt-md-1 pt-4'>
-                                            <img className='img-fluid width_gp' src='/imagess/googleplay.png' data-aos="fade-right" data-aos-duration="4000" />
-                                            <img className='img-fluid ps-md-4 ps-2 width_gp' src='/imagess/apple.png' data-aos="fade-right" data-aos-duration="3000" />
+                                            <img className='img-fluid width_gp' src='/imagess/googleplay.webp' data-aos="fade-right" data-aos-duration="4000" />
+                                            <img className='img-fluid ps-md-4 ps-2 width_gp' src='/imagess/apple.webp' data-aos="fade-right" data-aos-duration="3000" />
                                         </div>
                                         <div className='col-md-12 mt-md-3 mt-4'>
                                             <div className='row'>
                                                 <div className='col-md-3 col-4 '>
-                                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/people.png' />
+                                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/people.webp' />
                                                 </div>
                                                 <div className='col-md-9 col-8 m-auto'>
                                                     <p className='m-0 p-0' data-aos="fade-left" data-aos-duration="3000"><span className='fivek'>500K+</span><span className='people ps-2'>People already trusted us.</span></p>
@@ -91,7 +93,7 @@ function AllServices() {
                                         </div>
                                     </div>
                                     <div className='col-md-6 mt-md-0 mt-5 text-center'>
-                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/banner-s1.png' />
+                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/banner-s1.webp' />
                                     </div>
                                 </div>
                             </div>
@@ -105,14 +107,16 @@ function AllServices() {
                                     </p>
                                     <div className='col-md-12 '>
                                         <p className='m-0 p-0 subb_head ' data-aos="fade-right" data-aos-duration="3000">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Volutpat nisl bibendum vitae<br />
-                                            consequat. Nisl ut sed accumsan congue tempus fringilla diam arcu. Venenatis nulla
+                                            At YafPay, we operate banking services globally, reaching people in many
+                                            countries. Wherever you are, our goal is simple: to make banking easy and
+                                            accessible for everyone.
+
                                         </p>
                                         <div className='row'>
                                             <div className='col-md-6'>
                                                 <div className='row mt-3'>
                                                     <div className='col-md-2 col-1 '>
-                                                        <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                        <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                     </div>
                                                     <div className='col-md-10 ps-0 col-11 pt-1'>
                                                         <p className='m-0 p-0 subb_head ' data-aos="fade-right" data-aos-duration="3000">
@@ -122,7 +126,7 @@ function AllServices() {
                                                 </div>
                                                 <div className='row mt-3'>
                                                     <div className='col-md-2 col-1 '>
-                                                        <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                        <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                     </div>
                                                     <div className='col-md-10 ps-0 col-11 pt-1'>
                                                         <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000">
@@ -132,7 +136,7 @@ function AllServices() {
                                                 </div>
                                                 <div className='row mt-3'>
                                                     <div className='col-md-2 col-1 '>
-                                                        <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                        <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                     </div>
                                                     <div className='col-md-10 ps-0 col-11 pt-1'>
                                                         <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000" >
@@ -144,7 +148,7 @@ function AllServices() {
                                             <div className='col-md-6'>
                                                 <div className='row mt-3'>
                                                     <div className='col-md-2 col-1 '>
-                                                        <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                        <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                     </div>
                                                     <div className='col-md-10 ps-0 col-11 pt-1'>
                                                         <p className='m-0 p-0 subb_head ' data-aos="fade-right" data-aos-duration="3000">
@@ -154,7 +158,7 @@ function AllServices() {
                                                 </div>
                                                 <div className='row mt-3'>
                                                     <div className='col-md-2 col-1 '>
-                                                        <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                        <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                     </div>
                                                     <div className='col-md-10 ps-0 col-11 pt-1'>
                                                         <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000">
@@ -164,7 +168,7 @@ function AllServices() {
                                                 </div>
                                                 <div className='row mt-3'>
                                                     <div className='col-md-2 col-1 '>
-                                                        <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                        <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                     </div>
                                                     <div className='col-md-10 ps-0 col-11 pt-1'>
                                                         <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000" >
@@ -178,7 +182,7 @@ function AllServices() {
                                     </div>
                                 </div>
                                 <div className='col-md-6 text-end mt-5 mt-md-0'>
-                                    <img className='img-fluid' src='/imagess/banner-s2.png' data-aos="fade-left" data-aos-duration="6000" />
+                                    <img className='img-fluid' src='/imagess/banner-s2.webp' data-aos="fade-left" data-aos-duration="6000" />
                                 </div>
 
                             </div>
@@ -191,7 +195,7 @@ function AllServices() {
                                         <div className='col-md-1 col-1 px-0'>
                                             <img className='img-fluid'
                                                 data-aos="fade-right" data-aos-duration="4000"
-                                                src='/imagess/one.png' />
+                                                src='/imagess/one.webp' />
                                         </div>
                                         <div className='col-md-11 col-11'>
                                             <p className='m-0 p-0 register_text' data-aos="fade-right" data-aos-duration="4000" >Register in minutes</p>
@@ -207,7 +211,7 @@ function AllServices() {
                                         <div className='col-md-1 col-1 px-0'>
                                             <img className='img-fluid'
                                                 data-aos="fade-right" data-aos-duration="4000"
-                                                src='/imagess/one.png' />
+                                                src='/imagess/one.webp' />
                                         </div>
                                         <div className='col-md-11 col-11'>
                                             <p className='m-0 p-0 register_text' data-aos="fade-right" data-aos-duration="4000" >Complete KYC verifications</p>
@@ -223,7 +227,7 @@ function AllServices() {
                                         <div className='col-md-1 col-1 px-0'>
                                             <img className='img-fluid'
                                                 data-aos="fade-right" data-aos-duration="4000"
-                                                src='/imagess/one.png' />
+                                                src='/imagess/one.webp' />
                                         </div>
                                         <div className='col-md-11 col-11'>
                                             <p className='m-0 p-0 register_text' data-aos="fade-right" data-aos-duration="4000" >Get your virtual account</p>
@@ -236,17 +240,17 @@ function AllServices() {
                                 </div>
                             </div>
                             <div className='col-md-12 mt-5 px-2 px-md-0'>
-                                <img className='img-fluid' data-aos="fade-right" data-aos-duration="3000" src='/imagess/register.png' />
+                                <img className='img-fluid' data-aos="fade-right" data-aos-duration="3000" src='/imagess/register.webp' />
                             </div>
                         </div>
-                        <div className='col-md-12  background_header3 pt-5  '>
+                        {/* <div className='col-md-12  background_header3 pt-5  '>
                             <div className='row universal_padding'>
                                 <div className='col-md-12  text-center'>
                                     <p className='font_GBP mb-0' data-aos="zoom-in-up" data-aos-duration="4000">Frequently ask question</p>
                                     <p className='font_GBP1' data-aos="zoom-in-up" data-aos-duration="4000">Just find your answers below</p>
                                 </div>
                                 <div className='col-md-4'>
-                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/banner-s3.png' />
+                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/banner-s3.webp' />
                                 </div>
                                 <div className='col-md-8 px-md-5 mt-5 m-md-auto'>
                                     <div className='col-md-12 background_card_new11   bg-white'
@@ -255,14 +259,14 @@ function AllServices() {
                                         aria-expanded={open1}
                                     >
                                         <div className={`col-md-12 ${open1 ? "background_active_drop" : ""} py-2 px-3`}>
-                                        <div className='row'>
-                                            <div className='col-md-8 col-10 m-auto'>
-                                                <p className='m-0 p-0 new_c_text'>1. What kind of financial consultancy you need?</p>
+                                            <div className='row'>
+                                                <div className='col-md-8 col-10 m-auto'>
+                                                    <p className='m-0 p-0 new_c_text'>1. What kind of financial consultancy you need?</p>
+                                                </div>
+                                                <div className='col-md-4 col-2 text-end'>
+                                                    <img className='img-fluid' src={`/imagess/${open1 ? "minus" : "pluss"}.webp`} />
+                                                </div>
                                             </div>
-                                            <div className='col-md-4 col-2 text-end'>
-                                                <img className='img-fluid'  src={`/imagess/${open1 ? "minus" : "pluss"}.png`} />
-                                            </div>
-                                        </div>
                                         </div>
                                         <Collapse in={open1} className='mt-2 px-3'>
                                             <div id="example-collapse-text ">
@@ -278,14 +282,14 @@ function AllServices() {
                                         aria-expanded={open2}
                                     >
                                         <div className={`col-md-12 ${open2 ? "background_active_drop" : ""} py-2 px-3`}>
-                                        <div className='row'>
-                                            <div className='col-md-8 col-10 m-auto'>
-                                                <p className='m-0 p-0 new_c_text'>2. What Is The Best Features And Services We Deliver?</p>
+                                            <div className='row'>
+                                                <div className='col-md-8 col-10 m-auto'>
+                                                    <p className='m-0 p-0 new_c_text'>2. What Is The Best Features And Services We Deliver?</p>
+                                                </div>
+                                                <div className='col-md-4 col-2 text-end'>
+                                                    <img className='img-fluid' src={`/imagess/${open2 ? "minus" : "pluss"}.webp`} />
+                                                </div>
                                             </div>
-                                            <div className='col-md-4 col-2 text-end'>
-                                                <img className='img-fluid'  src={`/imagess/${open2 ? "minus" : "pluss"}.png`} />
-                                            </div>
-                                        </div>
                                         </div>
                                         <Collapse in={open2} className='mt-2 px-3'>
                                             <div id="example-collapse-text ">
@@ -301,14 +305,14 @@ function AllServices() {
                                         aria-expanded={open3}
                                     >
                                         <div className={`col-md-12 ${open3 ? "background_active_drop" : ""} py-2 px-3`}>
-                                        <div className='row'>
-                                            <div className='col-md-8 col-10 m-auto'>
-                                                <p className='m-0 p-0 new_c_text'>3. What Are The Objectives Of This Service?</p>
+                                            <div className='row'>
+                                                <div className='col-md-8 col-10 m-auto'>
+                                                    <p className='m-0 p-0 new_c_text'>3. What Are The Objectives Of This Service?</p>
+                                                </div>
+                                                <div className='col-md-4 col-2 text-end'>
+                                                    <img className='img-fluid' src={`/imagess/${open3 ? "minus" : "pluss"}.webp`} />
+                                                </div>
                                             </div>
-                                            <div className='col-md-4 col-2 text-end'>
-                                                <img className='img-fluid'  src={`/imagess/${open3 ? "minus" : "pluss"}.png`} />
-                                            </div>
-                                        </div>
                                         </div>
                                         <Collapse in={open3} className='mt-2 px-3'>
                                             <div id="example-collapse-text ">
@@ -324,14 +328,14 @@ function AllServices() {
                                         aria-expanded={open4}
                                     >
                                         <div className={`col-md-12 ${open4 ? "background_active_drop" : ""} py-2 px-3`}>
-                                        <div className='row'>
-                                            <div className='col-md-8 col-10 m-auto'>
-                                                <p className='m-0 p-0 new_c_text'>4. What Is A Multi-currency Card?</p>
+                                            <div className='row'>
+                                                <div className='col-md-8 col-10 m-auto'>
+                                                    <p className='m-0 p-0 new_c_text'>4. What Is A Multi-currency Card?</p>
+                                                </div>
+                                                <div className='col-md-4 col-2 text-end'>
+                                                    <img className='img-fluid' src={`/imagess/${open4 ? "minus" : "pluss"}.webp`} />
+                                                </div>
                                             </div>
-                                            <div className='col-md-4 col-2 text-end'>
-                                                <img className='img-fluid'  src={`/imagess/${open4 ? "minus" : "pluss"}.png`} />
-                                            </div>
-                                        </div>
                                         </div>
                                         <Collapse in={open4} className='mt-2 px-3'>
                                             <div id="example-collapse-text ">
@@ -347,14 +351,14 @@ function AllServices() {
                                         aria-expanded={open5}
                                     >
                                         <div className={`col-md-12 ${open5 ? "background_active_drop" : ""} py-2 px-3`}>
-                                        <div className='row'>
-                                            <div className='col-md-8 col-10 m-auto'>
-                                                <p className='m-0 p-0 new_c_text'>5. What Is The Best Features And Services We Deliver?</p>
+                                            <div className='row'>
+                                                <div className='col-md-8 col-10 m-auto'>
+                                                    <p className='m-0 p-0 new_c_text'>5. What Is The Best Features And Services We Deliver?</p>
+                                                </div>
+                                                <div className='col-md-4 col-2 text-end'>
+                                                    <img className='img-fluid' src={`/imagess/${open5 ? "minus" : "pluss"}.webp`} />
+                                                </div>
                                             </div>
-                                            <div className='col-md-4 col-2 text-end'>
-                                                <img className='img-fluid'  src={`/imagess/${open5 ? "minus" : "pluss"}.png`} />
-                                            </div>
-                                        </div>
                                         </div>
                                         <Collapse in={open5} className='mt-2 px-3'>
                                             <div id="example-collapse-text ">
@@ -370,14 +374,14 @@ function AllServices() {
                                         aria-expanded={open6}
                                     >
                                         <div className={`col-md-12 ${open6 ? "background_active_drop" : ""} py-2 px-3`}>
-                                        <div className='row'>
-                                            <div className='col-md-8 col-10 m-auto'>
-                                                <p className='m-0 p-0 new_c_text'>6. What Happened To The Borderless Account?</p>
+                                            <div className='row'>
+                                                <div className='col-md-8 col-10 m-auto'>
+                                                    <p className='m-0 p-0 new_c_text'>6. What Happened To The Borderless Account?</p>
+                                                </div>
+                                                <div className='col-md-4 col-2 text-end'>
+                                                    <img className='img-fluid' src={`/imagess/${open6 ? "minus" : "pluss"}.webp`} />
+                                                </div>
                                             </div>
-                                            <div className='col-md-4 col-2 text-end'>
-                                                <img className='img-fluid'  src={`/imagess/${open6 ? "minus" : "pluss"}.png`} />
-                                            </div>
-                                        </div>
                                         </div>
                                         <Collapse in={open6} className='mt-2 px-3'>
                                             <div id="example-collapse-text ">
@@ -387,20 +391,20 @@ function AllServices() {
                                             </div>
                                         </Collapse>
                                     </div>
-                                   
+
                                 </div>
                                 <div className='col-md-12 position_new pe-0'>
-                                    <img className='img-fluid wisth_circle' src='/imagess/side.png' />
+                                    <img className='img-fluid wisth_circle' src='/imagess/side.webp' />
                                 </div>
                             </div>
 
 
-                        </div>
+                        </div> */}
 
                         <div className='col-md-12  background_header3 pt-5  px-md-5  pb-md-0 pb-5'>
                             <div className='row universal_padding'>
                                 <div className='col-md-6 px-md-4'>
-                                    <img className='img-fluid' src='/imagess/b4.png' data-aos="fade-right" data-aos-duration="6000" />
+                                    <img className='img-fluid' src='/imagess/b4.webp' data-aos="fade-right" data-aos-duration="6000" />
                                 </div>
                                 <div className='col-md-6 m-auto'>
                                     <p className='text_section5 mt-md-0 mt-5' data-aos="fade-left" data-aos-duration="5000">
@@ -408,8 +412,8 @@ function AllServices() {
                                         banking benefits from anywhere
                                     </p>
                                     <div className='col-md-12  pt-4' data-aos="fade-left" data-aos-duration="3000">
-                                        <img className='img-fluid width_gp' src='/imagess/googleplay.png' />
-                                        <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.png' />
+                                        <img className='img-fluid width_gp' src='/imagess/googleplay.webp' />
+                                        <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.webp' />
                                     </div>
                                 </div>
 

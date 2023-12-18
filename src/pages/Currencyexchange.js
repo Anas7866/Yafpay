@@ -10,10 +10,13 @@ import { useEffect, useState } from 'react'
 import Header from '@/Components/Header/Header'
 import LoaderUniversal from '@/Components/LoaderUniversal/LoaderUniversal'
 import Link from 'next/link'
-import Button from 'react-bootstrap/Button';
-import Collapse from 'react-bootstrap/Collapse';
+import MobileHeader from '@/Components/MobileHeader/MobileHeader'
+import { Collapse } from 'react-bootstrap'
 
-function Currencyexchange() {
+function CurrencyExchange() {
+    const [open1, setOpen1] = useState(false);
+    const [open2, setOpen2] = useState(false);
+    const [open3, setOpen3] = useState(false);
     useEffect(() => {
         setTimeout(function () {
         }, 6000);
@@ -22,14 +25,6 @@ function Currencyexchange() {
             easing: 'ease',
         });
     }, []);
-
-    const [open1, setOpen1] = useState(false);
-    const [open2, setOpen2] = useState(false);
-    const [open3, setOpen3] = useState(false);
-    const [open4, setOpen4] = useState(false);
-    const [open5, setOpen5] = useState(false);
-    const [open6, setOpen6] = useState(false);
-
     return (
         <>
             <Head>
@@ -43,47 +38,52 @@ function Currencyexchange() {
                     <LanguageHeader />
                     <div className='col-md-12 background_color_universal'>
                         <div className='col-md-12 background_header1 universal_padding'>
-                            <div className='row pt-4'>
+                            <div className='row display_pc pt-4'>
                                 <div className='col-md-2 col-5'>
                                     <Link href="/" className='link_style'>
-                                        <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
+                                        <img className='img-fluid width_gp_l' src='/imagess/logo.webp' />
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2'>
                                     <Link href="/" className='link_style'>
-                                          <p className='m-0 p-0 font_header2'>Home</p>
+                                        <p className='m-0 p-0 font_header2'>Home</p>
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2' >
-                                      <Link href="/Blogs" className='link_style'>
- <p className='m-0 p-0 font_header2'>Blog</p>
-</Link>
+                                    <Link href="/Blogs" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Blog</p>
+                                    </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-3'>
-                                    <p className='m-0 p-0 font_header2'>Help Center</p>
+                                    <Link href="/helpcenter" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Help Center</p>
+                                    </Link>
                                 </div>
 
+                            </div>
+                            <div className='display_mob'>
+                                <MobileHeader />
                             </div>
                             <div className='col-md-12 mt-5 pb-5'>
                                 <div className='row'>
                                     <div className='col-md-6 m-auto '>
                                         <p className='m-0 p-0 banner1_heading' data-aos="fade-right" data-aos-duration="4000">
-                                            An Easier Way to<br />
-                                            Spend Globally
+                                            Convert your money
+                                            between currencies
+                                            fast!
                                         </p>
                                         <p className='m-0 p-0 sub_heading_banner1 pt-3' data-aos="fade-right" data-aos-duration="3000">
-                                            Spend freely with a debit card that makes your international payments
-                                            easier. Get a Grey virtual card to shop, or pay for subscriptions and
-                                            gifts online anywhere in the world.
+                                            Receive payments from anywhere, and convert them to your local<br />
+                                            currency or other currencies.
                                         </p>
-                                        <div className='col-md-12 mt-md-1 pt-4'>
-                                            <img className='img-fluid width_gp' src='/imagess/googleplay.png' data-aos="fade-right" data-aos-duration="4000" />
-                                            <img className='img-fluid ps-md-4 ps-2 width_gp' src='/imagess/apple.png' data-aos="fade-right" data-aos-duration="3000" />
+                                        <div className='col-md-12 mt-md-5 pt-4'>
+                                            <img className='img-fluid width_gp' src='/imagess/googleplay.webp' data-aos="fade-right" data-aos-duration="4000" />
+                                            <img className='img-fluid ps-md-4 ps-2 width_gp' src='/imagess/apple.webp' data-aos="fade-right" data-aos-duration="3000" />
                                         </div>
                                         <div className='col-md-12 mt-md-3 mt-4'>
                                             <div className='row'>
                                                 <div className='col-md-3 col-4 '>
-                                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/people.png' />
+                                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/people.webp' />
                                                 </div>
                                                 <div className='col-md-9 col-8 m-auto'>
                                                     <p className='m-0 p-0' data-aos="fade-left" data-aos-duration="3000"><span className='fivek'>500K+</span><span className='people ps-2'>People already trusted us.</span></p>
@@ -92,245 +92,232 @@ function Currencyexchange() {
                                         </div>
                                     </div>
                                     <div className='col-md-6 mt-md-0 mt-5 text-center'>
-                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/banner-c1.png' />
+                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/banner-c1.webp' />
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='col-md-12 mt-5 pt-5 mb-5 pb-5'>
-                            <div className='row universal_padding'>
-                                <div className='col-md-6 m-auto'>
-                                    <div className='col-md-12  text-start'>
-                                        <p className='font_GBP mb-0' data-aos="zoom-in-up" data-aos-duration="4000">Why people choose us</p>
-                                        <p className='font_GBP3 mb-2' data-aos="zoom-in-up" data-aos-duration="4000">Banking Payments</p>
-                                        <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
-                                            There are many variations of passages of Lorem Ipsum amet avoilble but majority
-                                            have suffered alteration in some form, by injected humur or randomise words which
-                                            don't sure amet sit dolor quras alto lorem.
-                                        </p>
-                                        <p className=' mb-1 points_currency' data-aos="zoom-in-left" data-aos-duration="6000">
-                                            Cards that work all across the world.
-                                        </p>
-                                        <p className=' mb-1 points_currency' data-aos="zoom-in-left" data-aos-duration="4000">
-                                            Highest Returns on your investments.
-                                        </p>
-                                        <p className=' mb-1 points_currency ' data-aos="zoom-in-left" data-aos-duration="2000">
-                                            No ATM fees. No minimum balance. No overdrafts.
-                                        </p>
-                                    </div>
-                                    <div className='col-md-12 mt-4' data-aos="zoom-in-left" data-aos-duration="4000">
-                                        <img className='img-fluid' src='/imagess/signup.png' />
-                                    </div>
-                                </div>
-                                <div className='col-md-6 text-center mt-5 mt-0'>
-                                    <img className='img-fluid' src='/imagess/banner-v2.png' />
-                                </div>
+                        <div className='col-md-12  background_header22 pt-5 mt-5 '>
+                            <div className='col-md-12  text-center'>
+                                <p className='font_GBP' data-aos="zoom-in-up" data-aos-duration="4000">Free USD, GBP and EUR accounts<br />
+                                    for all your international transactions</p>
                             </div>
-                        </div>
-
-                        <div className='col-md-12 mt-5 pt-5 mb-5 pb-5'>
-                            <div className='row universal_padding_right'>
-                                <div className='col-md-6 text-start'>
-                                    <img className='img-fluid' src='/imagess/banner-c2.png' />
-                                </div>
-                                <div className='col-md-6 m-md-auto mt-5 ps-4 px-md-0'>
-                                    <div className='col-md-12  text-start'>
-                                        <p className='font_GBP mb-0' data-aos="zoom-in-up" data-aos-duration="4000">A Fully Integrated Suite Of Every Product Payments</p>
-                                        <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
-                                            There are many variations of passages of Lorem Ipsum amet avoilble but majority
-                                            have suffered alteration in some form, by injected humur or randomise words which
-                                            don't sure amet sit dolor quras alto lorem.
-                                        </p>
-                                    </div>
-                                    <div className='row mt-4'>
-                                        <div className='col-md-6'>
-                                            <div className='col-md-12'>
-                                                <img className='img-fluid' src='/imagess/kl.png' />
-                                                <p className='m-0 p-0 split'>Split The Necessities</p>
-                                                <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
-                                                    There are many variations of passages of Lorem Ipsum amet avoilble but majority
-                                                    have suffered alteration in some form.
-                                                </p>
-                                            </div>
+                            <div className='col-md-12 universal_padding_left'>
+                                <div className='row mt-5 pt-4  pb-5' >
+                                    <div className='col-md-6'>
+                                        <div className='col-md-12 '>
+                                            <img className='img-fluid' src='/imagess/ico1.webp' data-aos="fade-right" data-aos-duration="4000" />
+                                            <p className='m-0 p-0 heading_b2' data-aos="fade-right" data-aos-duration="3000">Send and receive money quickly</p>
+                                            <p className='m-0 p-0 sub_heading_b2' data-aos="fade-right" data-aos-duration="3000">
+                                                Enjoy fast global money transfer with your international bank<br />
+                                                account on YAFPAY.
+                                            </p>
+                                            <img className='img-fluid mt-3' src='/imagess/start.webp' data-aos="fade-right" data-aos-duration="4000" />
                                         </div>
-                                        <div className='col-md-6'>
-                                            <div className='col-md-12'>
-                                                <img className='img-fluid' src='/imagess/ip.png' />
-                                                <p className='m-0 p-0 split'>Pay For Business</p>
-                                                <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
-                                                    There are many variations of passages of Lorem Ipsum amet avoilble but majority
-                                                    have suffered alteration in some form.
-                                                </p>
-                                            </div>
+                                        <div className='col-md-12 mt-3'>
+                                            <img className='img-fluid' src='/imagess/ico2.webp' data-aos="fade-right" data-aos-duration="4000" />
+                                            <p className='m-0 p-0 heading_b2' data-aos="fade-right" data-aos-duration="3000">Instant currency exchange</p>
+                                            <p className='m-0 p-0 sub_heading_b2' data-aos="fade-right" data-aos-duration="3000">
+                                                Enjoy quick and efficient online foreign exchange transactions.<br />
+                                                Say goodbye to bank queues and disappointments..
+                                            </p>
+                                            <img className='img-fluid mt-3' src='/imagess/start.webp' data-aos="fade-right" data-aos-duration="4000" />
+                                        </div>
+                                        <div className='col-md-12 mt-3 mb-5'>
+                                            <img className='img-fluid' src='/imagess/ico3.webp' data-aos="fade-right" data-aos-duration="4000" />
+                                            <p className='m-0 p-0 heading_b2' data-aos="fade-right" data-aos-duration="3000">Send and receive money quickly</p>
+                                            <p className='m-0 p-0 sub_heading_b2' data-aos="fade-right" data-aos-duration="3000">
+                                                Enjoy fast global money transfer with your international bank<br />
+                                                account on YAFPAY.
+                                            </p>
+                                            <img className='img-fluid mt-3' src='/imagess/start.webp' data-aos="fade-right" data-aos-duration="4000" />
                                         </div>
                                     </div>
+                                    <div className='col-md-6 text-end mt-5 mt-md-0'>
+                                        <img className='img-fluid' src='/imagess/banner2.webp' data-aos="fade-left" data-aos-duration="4000" />
+                                    </div>
                                 </div>
-
-
                             </div>
+
                         </div>
-
-
                         <div className='col-md-12  background_header22 pt-5  '>
                             <div className='row universal_padding'>
-                                <div className='col-md-12  text-center mb-5 '>
-                                    <p className='font_GBP mb-0' data-aos="zoom-in-up" data-aos-duration="4000">Frequently ask question</p>
-                                    <p className='font_GBP1' data-aos="zoom-in-up" data-aos-duration="4000">Just find your answers below</p>
+                                <div className='col-md-6'>
+                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/banner-v2.webp' />
                                 </div>
-                                <div className='col-md-4'>
-                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/banner-s3.png' />
-                                </div>
-                                <div className='col-md-8 px-md-5 mt-5 m-md-auto'>
-                                    <div className='col-md-12 background_card_new11   bg-white'
-                                        onClick={() => setOpen1(!open1)}
-                                        aria-controls="example-collapse-text"
-                                        aria-expanded={open1}
-                                    >
-                                        <div className={`col-md-12 ${open1 ? "background_active_drop" : ""} py-2 px-3`}>
-                                            <div className='row'>
-                                                <div className='col-md-8 col-10 m-auto'>
-                                                    <p className='m-0 p-0 new_c_text'>1. What kind of financial consultancy you need?</p>
-                                                </div>
-                                                <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open1 ? "minus" : "pluss"}.png`} />
-                                                </div>
+                                <div className='col-md-6 m-auto'>
+                                    <p className='text_section5 mt-md-0 mt-5' data-aos="fade-left" data-aos-duration="4000">We can easily open a YAFPAY account<br />
+                                        by following some rules below.</p>
+                                    <div className='col-md-12 px-md-3 px-2 mt-5' >
+                                        <div className='row'>
+                                            <div className='col-md-1 col-1 px-0'>
+                                                <img className='img-fluid' src='/imagess/onee.webp' data-aos="fade-left" data-aos-duration="5000" />
                                             </div>
-                                        </div>
-                                        <Collapse in={open1} className='mt-2 px-3'>
-                                            <div id="example-collapse-text ">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                                labore wes anderson cred nesciunt sapiente ea proident.
-                                            </div>
-                                        </Collapse>
-                                    </div>
-                                    <div className='col-md-12 background_card_new11 mt-4   bg-white'
-                                        onClick={() => setOpen2(!open2)}
-                                        aria-controls="example-collapse-text"
-                                        aria-expanded={open2}
-                                    >
-                                        <div className={`col-md-12 ${open2 ? "background_active_drop" : ""} py-2 px-3`}>
-                                            <div className='row'>
-                                                <div className='col-md-8 col-10 m-auto'>
-                                                    <p className='m-0 p-0 new_c_text'>2. What Is The Best Features And Services We Deliver?</p>
-                                                </div>
-                                                <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open2 ? "minus" : "pluss"}.png`} />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <Collapse in={open2} className='mt-2 px-3'>
-                                            <div id="example-collapse-text ">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                                labore wes anderson cred nesciunt sapiente ea proident.
-                                            </div>
-                                        </Collapse>
-                                    </div>
-                                    <div className='col-md-12 background_card_new11 mt-4   bg-white'
-                                        onClick={() => setOpen3(!open3)}
-                                        aria-controls="example-collapse-text"
-                                        aria-expanded={open3}
-                                    >
-                                        <div className={`col-md-12 ${open3 ? "background_active_drop" : ""} py-2 px-3`}>
-                                            <div className='row'>
-                                                <div className='col-md-8 col-10 m-auto'>
-                                                    <p className='m-0 p-0 new_c_text'>3. What Are The Objectives Of This Service?</p>
-                                                </div>
-                                                <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open3 ? "minus" : "pluss"}.png`} />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <Collapse in={open3} className='mt-2 px-3'>
-                                            <div id="example-collapse-text ">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                                labore wes anderson cred nesciunt sapiente ea proident.
-                                            </div>
-                                        </Collapse>
-                                    </div>
-                                    <div className='col-md-12 background_card_new11 mt-4   bg-white'
-                                        onClick={() => setOpen4(!open4)}
-                                        aria-controls="example-collapse-text"
-                                        aria-expanded={open4}
-                                    >
-                                        <div className={`col-md-12 ${open4 ? "background_active_drop" : ""} py-2 px-3`}>
-                                            <div className='row'>
-                                                <div className='col-md-8 col-10 m-auto'>
-                                                    <p className='m-0 p-0 new_c_text'>4. What Is A Multi-currency Card?</p>
-                                                </div>
-                                                <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open4 ? "minus" : "pluss"}.png`} />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <Collapse in={open4} className='mt-2 px-3'>
-                                            <div id="example-collapse-text ">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                                labore wes anderson cred nesciunt sapiente ea proident.
-                                            </div>
-                                        </Collapse>
-                                    </div>
-                                    <div className='col-md-12 background_card_new11 mt-4   bg-white'
-                                        onClick={() => setOpen5(!open5)}
-                                        aria-controls="example-collapse-text"
-                                        aria-expanded={open5}
-                                    >
-                                        <div className={`col-md-12 ${open5 ? "background_active_drop" : ""} py-2 px-3`}>
-                                            <div className='row'>
-                                                <div className='col-md-8 col-10 m-auto'>
-                                                    <p className='m-0 p-0 new_c_text'>5. What Is The Best Features And Services We Deliver?</p>
-                                                </div>
-                                                <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open5 ? "minus" : "pluss"}.png`} />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <Collapse in={open5} className='mt-2 px-3'>
-                                            <div id="example-collapse-text ">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                                labore wes anderson cred nesciunt sapiente ea proident.
-                                            </div>
-                                        </Collapse>
-                                    </div>
-                                    <div className='col-md-12 background_card_new11 mt-4   bg-white'
-                                        onClick={() => setOpen6(!open6)}
-                                        aria-controls="example-collapse-text"
-                                        aria-expanded={open6}
-                                    >
-                                        <div className={`col-md-12 ${open6 ? "background_active_drop" : ""} py-2 px-3`}>
-                                            <div className='row'>
-                                                <div className='col-md-8 col-10 m-auto'>
-                                                    <p className='m-0 p-0 new_c_text'>6. What Happened To The Borderless Account?</p>
-                                                </div>
-                                                <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open6 ? "minus" : "pluss"}.png`} />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <Collapse in={open6} className='mt-2 px-3'>
-                                            <div id="example-collapse-text ">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                                labore wes anderson cred nesciunt sapiente ea proident.
-                                            </div>
-                                        </Collapse>
-                                    </div>
+                                            <div className='col-md-11 col-11'>
+                                                <p className='m-0 p-0 sub_head_new' data-aos="fade-left" data-aos-duration="4000">Personal details</p>
+                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">
+                                                    Provide your essential personal details to initiate your YafPay account for seamless
+                                                    currency exchange.
 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className='row mt-3'>
+                                            <div className='col-md-1 col-1 px-0' data-aos="fade-left" data-aos-duration="5000">
+                                                <img className='img-fluid' src='/imagess/two.webp' />
+                                            </div>
+                                            <div className='col-md-11 col-11'>
+                                                <p className='m-0 p-0 sub_head_new' data-aos="fade-left" data-aos-duration="4000">Identification</p>
+                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">
+                                                    Enhance security by ensuring your identification details are accurate and up-todate. It's a vital step for a protected and compliant currency exchange environment.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className='row mt-3'>
+                                            <div className='col-md-1 col-1 px-0'>
+                                                <img className='img-fluid' src='/imagess/three.webp' />
+                                            </div>
+                                            <div className='col-md-11 col-11' data-aos="fade-left" data-aos-duration="5000">
+                                                <p className='m-0 p-0 sub_head_new' data-aos="fade-left" data-aos-duration="4000">Address information</p>
+                                                <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">
+                                                    Confirm your address information to add an extra layer of precision to your
+                                                    YafPay account. Ensures reliability and accuracy in every currency exchange
+                                                    transaction.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
 
                         </div>
-
+                        <div className='col-md-12 background_header_linear_22 pt-5'>
+                            <p className='font_GBP custom-distance-top text-center' data-aos="zoom-in-up" data-aos-duration="4000">Resources to Help You Learn About YAFPAY</p>
+                            <div className='col-md-12 universal_padding mt-5 mb-5 pb-5'>
+                                <div className='row'>
+                                    <div className='col-md-4 mt-4 mt-md-0'>
+                                        <div className='col-md-12 px-md-3'>
+                                            <div className='col-md-12 '>
+                                                <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
+                                                <div className='row px-4 neg_mar_top'>
+                                                    <div className='col-md-6 col-6'>
+                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
+                                                    </div>
+                                                    <div className='col-md-4 col-4 text-end'>
+                                                        <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
+                                                    </div>
+                                                    <div className='col-md-2 col-2 text-end'>
+                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='col-md-12 mt-2 pe-md-5'>
+                                                <p className='m-0 p-0 font_cards pe-md-5'>Unveiling YafPay’s Currency Exchange Know-How</p>
+                                                <p className='m-0 p-0 font_cards_para pe-md-5'>
+                                                    Dive deep into the world of currency exchange with YafPay! In our latest post, we
+                                                    unravel the basics, equipping you with essential insights to navigate the currency
+                                                    market
+                                                    <Collapse in={open1}>
+                                                        <div id="example-collapse-text">
+                                                            Let's delve into practical strategies for optimizing your currency exchanges. Learn
+                                                            how to identify favorable exchange rates, minimize transaction fees, and execute
+                                                            trades at the right time. Whether you're a seasoned trader or new to currency
+                                                            exchange, our detailed guide ensures you can make informed decisions and get the
+                                                            most out of your YafPay experience.
+                                                        </div>
+                                                    </Collapse>
+                                                </p>
+                                            </div>
+                                            <div className='col-md-12'>
+                                                <img onClick={() => setOpen1(!open1)} className='img-fluid' src='/imagess/readmore.webp' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='col-md-4 mt-4 mt-md-0'>
+                                        <div className='col-md-12 px-md-3'>
+                                            <div className='col-md-12 '>
+                                                <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
+                                                <div className='row px-4 neg_mar_top'>
+                                                    <div className='col-md-6 col-6'>
+                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
+                                                    </div>
+                                                    <div className='col-md-4 col-4 text-end'>
+                                                        <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
+                                                    </div>
+                                                    <div className='col-md-2 col-2 text-end'>
+                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='col-md-12 mt-2 pe-md-5'>
+                                                <p className='m-0 p-0 font_cards pe-md-5'>Mastering YafPay’s Currency Exchange Tools</p>
+                                                <p className='m-0 p-0 font_cards_para pe-md-5'>
+                                                    Maximize your currency exchange experience with YafPay! Our second post is a
+                                                    detailed guide to mastering the platform's powerful tools.
+                                                    <Collapse in={open2}>
+                                                        <div id="example-collapse-text">
+                                                            Uncover the intricacies of YafPay's user-friendly interface and learn how to
+                                                            customize your dashboard for quick access to essential tools. Discover how to set
+                                                            personalized alerts for rate fluctuations and efficiently manage your currency
+                                                            portfolios. Whether you're a seasoned trader or new to YafPay, our guide provides
+                                                            valuable insights to enhance your proficiency in using the platform's currency
+                                                            exchange tools.
+                                                        </div>
+                                                    </Collapse>
+                                                </p>
+                                            </div>
+                                            <div className='col-md-12'>
+                                                <img onClick={() => setOpen2(!open2)} className='img-fluid' src='/imagess/readmore.webp' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='col-md-4 mt-4 mt-md-0'>
+                                        <div className='col-md-12 px-md-3'>
+                                            <div className='col-md-12 '>
+                                                <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
+                                                <div className='row px-4 neg_mar_top'>
+                                                    <div className='col-md-6 col-6'>
+                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
+                                                    </div>
+                                                    <div className='col-md-4 col-4 text-end'>
+                                                        <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
+                                                    </div>
+                                                    <div className='col-md-2 col-2 text-end'>
+                                                        <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='col-md-12 mt-2 pe-md-5'>
+                                                <p className='m-0 p-0 font_cards pe-md-5'>Navigating YafPay’s Currency Exchange Platform</p>
+                                                <p className='m-0 p-0 font_cards_para pe-md-5'>
+                                                    Efficiency meets precision on YafPay's currency exchange platform! Explore
+                                                    valuable insights, tips, and detailed instructions for optimizing your experience
+                                                    with swift and secure currency exchanges.
+                                                    <Collapse in={open2}>
+                                                        <div id="example-collapse-text">
+                                                            Uncover how to effortlessly switch between different currency pairs, set up
+                                                            recurring transactions, and easily track your transaction history. Whether you're a
+                                                            busy professional or a casual user, this guide ensures you can navigate YafPay's
+                                                            currency exchange platform like a pro, making every transaction a smooth and
+                                                            reliable experience.
+                                                        </div>
+                                                    </Collapse>
+                                                </p>
+                                            </div>
+                                            <div className='col-md-12'>
+                                                <img className='img-fluid' src='/imagess/readmore.webp' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div className='col-md-12  background_header3 pt-5  px-md-5  pb-md-0 pb-5'>
                             <div className='row universal_padding'>
                                 <div className='col-md-6 px-md-4'>
-                                    <img className='img-fluid' src='/imagess/b4.png' data-aos="fade-right" data-aos-duration="6000" />
+                                    <img className='img-fluid' src='/imagess/b4.webp' data-aos="fade-right" data-aos-duration="6000" />
                                 </div>
                                 <div className='col-md-6 m-auto'>
                                     <p className='text_section5 mt-md-0 mt-5' data-aos="fade-left" data-aos-duration="5000">
@@ -338,8 +325,8 @@ function Currencyexchange() {
                                         banking benefits from anywhere
                                     </p>
                                     <div className='col-md-12  pt-4' data-aos="fade-left" data-aos-duration="3000">
-                                        <img className='img-fluid width_gp' src='/imagess/googleplay.png' />
-                                        <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.png' />
+                                        <img className='img-fluid width_gp' src='/imagess/googleplay.webp' />
+                                        <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.webp' />
                                     </div>
                                 </div>
 
@@ -355,4 +342,4 @@ function Currencyexchange() {
     )
 }
 
-export default Currencyexchange
+export default CurrencyExchange

@@ -13,6 +13,7 @@ import Link from 'next/link'
 import { LuDot } from 'react-icons/lu'
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
+import MobileHeader from '@/Components/MobileHeader/MobileHeader'
 
 function FAQ() {
     useEffect(() => {
@@ -43,26 +44,31 @@ function FAQ() {
                     <LanguageHeader />
                     <div className='col-md-12 background_color_universal'>
                         <div className='col-md-12 background_headerpp universal_padding'>
-                            <div className='row pt-4'>
+                            <div className='row pt-4 display_pc'>
                                 <div className='col-md-2 col-5'>
                                     <Link href="/" className='link_style'>
-                                        <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
+                                        <img className='img-fluid width_gp_l' src='/imagess/logo.webp' />
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2'>
                                     <Link href="/" className='link_style'>
-                                          <p className='m-0 p-0 font_header2'>Home</p>
+                                        <p className='m-0 p-0 font_header2'>Home</p>
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2' >
-                                      <Link href="/Blogs" className='link_style'>
- <p className='m-0 p-0 font_header2'>Blog</p>
-</Link>
+                                    <Link href="/Blogs" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Blog</p>
+                                    </Link>
                                 </div>
-                                <div className='col-md-1 pt-2 col-3'>
-                                    <p className='m-0 p-0 font_header2'>Help Center</p>
+                               <div className='col-md-1 pt-2 col-3'>
+                                    <Link href="/helpcenter" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Help Center</p>
+                                    </Link>
                                 </div>
 
+                            </div>
+                            <div className='display_mob'>
+                                <MobileHeader />
                             </div>
                             <div className='col-md-12 mt-5 pb-5'>
                                 <div className='row'>
@@ -75,7 +81,7 @@ function FAQ() {
                                         </p>
                                     </div>
                                     <div className='col-md-6 mt-md-0 mt-5 text-center'>
-                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/faq.png' />
+                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/faq.webp' />
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +93,7 @@ function FAQ() {
                                     <p className='font_GBP1' data-aos="zoom-in-up" data-aos-duration="4000">Just find your answers below</p>
                                 </div>
                                 <div className='col-md-4'>
-                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/banner-s3.png' />
+                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/banner-s3.webp' />
                                 </div>
                                 <div className='col-md-8 px-md-5 mt-5 m-md-auto'>
                                     <div className='col-md-12 background_card_new11   bg-white'
@@ -98,18 +104,18 @@ function FAQ() {
                                         <div className={`col-md-12 ${open1 ? "background_active_drop" : ""} py-2 px-3`}>
                                             <div className='row'>
                                                 <div className='col-md-8 col-10 m-auto'>
-                                                    <p className='m-0 p-0 new_c_text'>1. What kind of financial consultancy you need?</p>
+                                                    <p className='m-0 p-0 new_c_text'>1. What is a virtual bank?</p>
                                                 </div>
                                                 <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open1 ? "minus" : "pluss"}.png`} />
+                                                    <img className='img-fluid' src={`/imagess/${open1 ? "minus" : "pluss"}.webp`} />
                                                 </div>
                                             </div>
                                         </div>
                                         <Collapse in={open1} className='mt-2 px-3'>
                                             <div id="example-collapse-text ">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                                labore wes anderson cred nesciunt sapiente ea proident.
+                                                A virtual bank operates entirely online, providing banking services without
+                                                physical branches. Users can manage their accounts, make transactions, and access
+                                                services through digital platforms.
                                             </div>
                                         </Collapse>
                                     </div>
@@ -121,18 +127,18 @@ function FAQ() {
                                         <div className={`col-md-12 ${open2 ? "background_active_drop" : ""} py-2 px-3`}>
                                             <div className='row'>
                                                 <div className='col-md-8 col-10 m-auto'>
-                                                    <p className='m-0 p-0 new_c_text'>2. What Is The Best Features And Services We Deliver?</p>
+                                                    <p className='m-0 p-0 new_c_text'>2. How secure are virtual banking transactions?</p>
                                                 </div>
                                                 <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open2 ? "minus" : "pluss"}.png`} />
+                                                    <img className='img-fluid' src={`/imagess/${open2 ? "minus" : "pluss"}.webp`} />
                                                 </div>
                                             </div>
                                         </div>
                                         <Collapse in={open2} className='mt-2 px-3'>
                                             <div id="example-collapse-text ">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                                labore wes anderson cred nesciunt sapiente ea proident.
+                                                Virtual banking apps use encryption and multi-factor authentication to protect
+                                                transactions. YafPay prioritizes user data protection through advanced security
+                                                protocols.
                                             </div>
                                         </Collapse>
                                     </div>
@@ -144,18 +150,17 @@ function FAQ() {
                                         <div className={`col-md-12 ${open3 ? "background_active_drop" : ""} py-2 px-3`}>
                                             <div className='row'>
                                                 <div className='col-md-8 col-10 m-auto'>
-                                                    <p className='m-0 p-0 new_c_text'>3. What Are The Objectives Of This Service?</p>
+                                                    <p className='m-0 p-0 new_c_text'>3. Can I open a virtual bank account without visiting a branch?</p>
                                                 </div>
                                                 <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open3 ? "minus" : "pluss"}.png`} />
+                                                    <img className='img-fluid' src={`/imagess/${open3 ? "minus" : "pluss"}.webp`} />
                                                 </div>
                                             </div>
                                         </div>
                                         <Collapse in={open3} className='mt-2 px-3'>
                                             <div id="example-collapse-text ">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                                labore wes anderson cred nesciunt sapiente ea proident.
+                                                Yes, YafPay and other virtual banks allow customers to open accounts online. The
+                                                process is simple and requires only basic information and documentation.
                                             </div>
                                         </Collapse>
                                     </div>
@@ -167,18 +172,19 @@ function FAQ() {
                                         <div className={`col-md-12 ${open4 ? "background_active_drop" : ""} py-2 px-3`}>
                                             <div className='row'>
                                                 <div className='col-md-8 col-10 m-auto'>
-                                                    <p className='m-0 p-0 new_c_text'>4. What Is A Multi-currency Card?</p>
+                                                    <p className='m-0 p-0 new_c_text'>4. What services do virtual banks offer?</p>
                                                 </div>
                                                 <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open4 ? "minus" : "pluss"}.png`} />
+                                                    <img className='img-fluid' src={`/imagess/${open4 ? "minus" : "pluss"}.webp`} />
                                                 </div>
                                             </div>
                                         </div>
                                         <Collapse in={open4} className='mt-2 px-3'>
                                             <div id="example-collapse-text ">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                                labore wes anderson cred nesciunt sapiente ea proident.
+                                                Virtual banks provide a range of services like account management, fund transfers,
+                                                bill payments, and investment options. For instance, YafPay offers a
+                                                comprehensive suite of financial services.
+
                                             </div>
                                         </Collapse>
                                     </div>
@@ -190,18 +196,20 @@ function FAQ() {
                                         <div className={`col-md-12 ${open5 ? "background_active_drop" : ""} py-2 px-3`}>
                                             <div className='row'>
                                                 <div className='col-md-8 col-10 m-auto'>
-                                                    <p className='m-0 p-0 new_c_text'>5. What Is The Best Features And Services We Deliver?</p>
+                                                    <p className='m-0 p-0 new_c_text'>5. How can I get in touch with customer support regarding virtual banking
+                                                        problems?
+                                                    </p>
                                                 </div>
                                                 <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open5 ? "minus" : "pluss"}.png`} />
+                                                    <img className='img-fluid' src={`/imagess/${open5 ? "minus" : "pluss"}.webp`} />
                                                 </div>
                                             </div>
                                         </div>
                                         <Collapse in={open5} className='mt-2 px-3'>
                                             <div id="example-collapse-text ">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                                labore wes anderson cred nesciunt sapiente ea proident.
+                                                Most virtual banks provide customer support through online chat, email, or phone.
+                                                YafPay, on the other hand, ensures prompt and responsive customer support to
+                                                address user concerns.
                                             </div>
                                         </Collapse>
                                     </div>
@@ -216,7 +224,7 @@ function FAQ() {
                                                     <p className='m-0 p-0 new_c_text'>6. What Happened To The Borderless Account?</p>
                                                 </div>
                                                 <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open6 ? "minus" : "pluss"}.png`} />
+                                                    <img className='img-fluid' src={`/imagess/${open6 ? "minus" : "pluss"}.webp`} />
                                                 </div>
                                             </div>
                                         </div>
@@ -239,7 +247,7 @@ function FAQ() {
                         <div className='col-md-12  background_header3 pt-5  px-md-5  pb-md-0 pb-5'>
                             <div className='row universal_padding'>
                                 <div className='col-md-6 px-md-4'>
-                                    <img className='img-fluid' src='/imagess/b4.png' data-aos="fade-right" data-aos-duration="6000" />
+                                    <img className='img-fluid' src='/imagess/b4.webp' data-aos="fade-right" data-aos-duration="6000" />
                                 </div>
                                 <div className='col-md-6 m-auto'>
                                     <p className='text_section5 mt-md-0 mt-5' data-aos="fade-left" data-aos-duration="5000">
@@ -247,8 +255,8 @@ function FAQ() {
                                         banking benefits from anywhere
                                     </p>
                                     <div className='col-md-12  pt-4' data-aos="fade-left" data-aos-duration="3000">
-                                        <img className='img-fluid width_gp' src='/imagess/googleplay.png' />
-                                        <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.png' />
+                                        <img className='img-fluid width_gp' src='/imagess/googleplay.webp' />
+                                        <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.webp' />
                                     </div>
                                 </div>
 

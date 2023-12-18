@@ -11,6 +11,7 @@ import Header from '@/Components/Header/Header'
 import LoaderUniversal from '@/Components/LoaderUniversal/LoaderUniversal'
 import Link from 'next/link'
 import { LuDot } from 'react-icons/lu'
+import MobileHeader from '@/Components/MobileHeader/MobileHeader'
 
 function Aboutus() {
     useEffect(() => {
@@ -34,26 +35,31 @@ function Aboutus() {
                     <LanguageHeader />
                     <div className='col-md-12 background_color_universal'>
                         <div className='col-md-12 background_headerpp universal_padding'>
-                            <div className='row pt-4'>
+                            <div className='row display_pc pt-4'>
                                 <div className='col-md-2 col-5'>
                                     <Link href="/" className='link_style'>
-                                        <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
+                                        <img className='img-fluid width_gp_l' src='/imagess/logo.webp' />
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2'>
                                     <Link href="/" className='link_style'>
-                                          <p className='m-0 p-0 font_header2'>Home</p>
+                                        <p className='m-0 p-0 font_header2'>Home</p>
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2' >
-                                      <Link href="/Blogs" className='link_style'>
- <p className='m-0 p-0 font_header2'>Blog</p>
-</Link>
+                                    <Link href="/Blogs" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Blog</p>
+                                    </Link>
                                 </div>
-                                <div className='col-md-1 pt-2 col-3'>
-                                    <p className='m-0 p-0 font_header2'>Help Center</p>
+                               <div className='col-md-1 pt-2 col-3'>
+                                    <Link href="/helpcenter" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Help Center</p>
+                                    </Link>
                                 </div>
 
+                            </div>
+                            <div className='display_mob'>
+                                <MobileHeader />
                             </div>
                             <div className='col-md-12 mt-5 pb-5'>
                                 <div className='row'>
@@ -66,7 +72,7 @@ function Aboutus() {
                                         </p>
                                     </div>
                                     <div className='col-md-6 mt-md-0 mt-5 text-center'>
-                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/money.png' />
+                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/money.webp' />
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +85,7 @@ function Aboutus() {
                                 <div className='row mt-5   pb-5' >
                                     <div className='col-md-6'>
                                         <div className='col-md-12'>
-                                            <img className='img-fluid' src='/imagess/banner-m2.png' />
+                                            <img className='img-fluid' src='/imagess/banner-m2.webp' />
                                         </div>
                                     </div>
                                     <div className='col-md-6 m-auto '>
@@ -96,7 +102,7 @@ function Aboutus() {
                                                 <div className='col-md-6'>
                                                     <div className='row mt-3'>
                                                         <div className='col-md-2 col-1 '>
-                                                            <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                            <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                         </div>
                                                         <div className='col-md-10 ps-0 col-11 pt-1'>
                                                             <p className='m-0 p-0 subb_head ' data-aos="fade-right" data-aos-duration="3000">
@@ -106,7 +112,7 @@ function Aboutus() {
                                                     </div>
                                                     <div className='row mt-3'>
                                                         <div className='col-md-2 col-1 '>
-                                                            <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                            <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                         </div>
                                                         <div className='col-md-10 ps-0 col-11 pt-1'>
                                                             <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000">
@@ -116,7 +122,7 @@ function Aboutus() {
                                                     </div>
                                                     <div className='row mt-3'>
                                                         <div className='col-md-2 col-1 '>
-                                                            <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                            <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                         </div>
                                                         <div className='col-md-10 ps-0 col-11 pt-1'>
                                                             <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000" >
@@ -128,7 +134,7 @@ function Aboutus() {
                                                 <div className='col-md-6'>
                                                     <div className='row mt-3'>
                                                         <div className='col-md-2 col-1 '>
-                                                            <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                            <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                         </div>
                                                         <div className='col-md-10 ps-0 col-11 pt-1'>
                                                             <p className='m-0 p-0 subb_head ' data-aos="fade-right" data-aos-duration="3000">
@@ -138,7 +144,7 @@ function Aboutus() {
                                                     </div>
                                                     <div className='row mt-3'>
                                                         <div className='col-md-2 col-1 '>
-                                                            <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                            <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                         </div>
                                                         <div className='col-md-10 ps-0 col-11 pt-1'>
                                                             <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000">
@@ -148,7 +154,7 @@ function Aboutus() {
                                                     </div>
                                                     <div className='row mt-3'>
                                                         <div className='col-md-2 col-1 '>
-                                                            <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                                                            <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                                                         </div>
                                                         <div className='col-md-10 ps-0 col-11 pt-1'>
                                                             <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000" >
@@ -172,7 +178,7 @@ function Aboutus() {
                                     <div className='col-md-12 py-4 px-4 bg-white rounded'>
                                         <div className='row'>
                                             <div className='col-md-2 col-2'>
-                                                <img className='img-fluid' src='/imagess/air.png' />
+                                                <img className='img-fluid' src='/imagess/air.webp' />
                                             </div>
                                             <div className='col-md-10 col-10 ps-0 carddd'>
                                                 <p className='m-0 p-0'>Global Coverage</p>
@@ -187,7 +193,7 @@ function Aboutus() {
                                     <div className='col-md-12 py-4 px-4 bg-white rounded'>
                                         <div className='row'>
                                             <div className='col-md-2 col-2'>
-                                                <img className='img-fluid' src='/imagess/casj.png' />
+                                                <img className='img-fluid' src='/imagess/casj.webp' />
                                             </div>
                                             <div className='col-md-10 col-10 ps-0 carddd'>
                                                 <p className='m-0 p-0'>Lowest Fee</p>
@@ -202,7 +208,7 @@ function Aboutus() {
                                     <div className='col-md-12 py-4 px-4 bg-white rounded'>
                                         <div className='row'>
                                             <div className='col-md-2 col-2'>
-                                                <img className='img-fluid' src='/imagess/cash.png' />
+                                                <img className='img-fluid' src='/imagess/cash.webp' />
                                             </div>
                                             <div className='col-md-10 col-10 ps-0 carddd'>
                                                 <p className='m-0 p-0'>Simple Transfer Methods</p>
@@ -217,7 +223,7 @@ function Aboutus() {
                                     <div className='col-md-12 py-4 px-4 bg-white rounded'>
                                         <div className='row'>
                                             <div className='col-md-2 col-2'>
-                                                <img className='img-fluid' src='/imagess/sack.png' />
+                                                <img className='img-fluid' src='/imagess/sack.webp' />
                                             </div>
                                             <div className='col-md-10 col-10 ps-0 carddd'>
                                                 <p className='m-0 p-0'>Instant Processing</p>
@@ -232,7 +238,7 @@ function Aboutus() {
                                     <div className='col-md-12 py-4 px-4 bg-white rounded'>
                                         <div className='row'>
                                             <div className='col-md-2 col-2'>
-                                                <img className='img-fluid' src='/imagess/cc.png' />
+                                                <img className='img-fluid' src='/imagess/cc.webp' />
                                             </div>
                                             <div className='col-md-10 col-10 ps-0 carddd'>
                                                 <p className='m-0 p-0'>Bank-level Security</p>
@@ -247,7 +253,7 @@ function Aboutus() {
                                     <div className='col-md-12 py-4 px-4 bg-white rounded'>
                                         <div className='row'>
                                             <div className='col-md-2 col-2'>
-                                                <img className='img-fluid' src='/imagess/cs.png' />
+                                                <img className='img-fluid' src='/imagess/cs.webp' />
                                             </div>
                                             <div className='col-md-10 col-10 ps-0 carddd'>
                                                 <p className='m-0 p-0'>Global 24/7 Support</p>
@@ -263,7 +269,7 @@ function Aboutus() {
                         <div className='col-md-12  background_header3 pt-5  '>
                             <div className='row universal_padding'>
                                 <div className='col-md-6'>
-                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/girls.png' />
+                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/girls.webp' />
                                 </div>
                                 <div className='col-md-6 m-md-auto mt-5 ps-4 px-md-0'>
                                     <div className='col-md-12  text-start'>
@@ -275,7 +281,7 @@ function Aboutus() {
                                     <div className='row mt-4'>
                                         <div className='col-md-6'>
                                             <div className='col-md-12'>
-                                                <img className='img-fluid' src='/imagess/kl.png' />
+                                                <img className='img-fluid' src='/imagess/kl.webp' />
                                                 <p className='m-0 p-0 split'>Split The Necessities</p>
                                                 <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
                                                     There are many variations of passages of Lorem Ipsum amet avoilble but majority
@@ -285,7 +291,7 @@ function Aboutus() {
                                         </div>
                                         <div className='col-md-6'>
                                             <div className='col-md-12'>
-                                                <img className='img-fluid' src='/imagess/ip.png' />
+                                                <img className='img-fluid' src='/imagess/ip.webp' />
                                                 <p className='m-0 p-0 split'>Pay For Business</p>
                                                 <p className='p_text_currency' data-aos="zoom-in-left" data-aos-duration="4000">
                                                     There are many variations of passages of Lorem Ipsum amet avoilble but majority
@@ -296,7 +302,7 @@ function Aboutus() {
                                     </div>
                                 </div>
                                 <div className='col-md-12 position_new pe-0'>
-                                    <img className='img-fluid wisth_circle' src='/imagess/side.png' />
+                                    <img className='img-fluid wisth_circle' src='/imagess/side.webp' />
                                 </div>
                             </div>
 
@@ -324,18 +330,18 @@ function Aboutus() {
                                         </p>
                                     </div>
                                     <div className='col-md-12 mt-4' data-aos="zoom-in-left" data-aos-duration="4000">
-                                        <img className='img-fluid' src='/imagess/signup.png' />
+                                        <img className='img-fluid' src='/imagess/signup.webp' />
                                     </div>
                                 </div>
                                 <div className='col-md-6 text-center mt-5 mt-0'>
-                                    <img className='img-fluid' src='/imagess/banner-v2.png' />
+                                    <img className='img-fluid' src='/imagess/banner-v2.webp' />
                                 </div>
                             </div>
                         </div>
                         <div className='col-md-12  background_header3 pt-5  px-md-5  pb-md-0 pb-5'>
                             <div className='row universal_padding'>
                                 <div className='col-md-6 px-md-4'>
-                                    <img className='img-fluid' src='/imagess/b4.png' data-aos="fade-right" data-aos-duration="6000" />
+                                    <img className='img-fluid' src='/imagess/b4.webp' data-aos="fade-right" data-aos-duration="6000" />
                                 </div>
                                 <div className='col-md-6 m-auto'>
                                     <p className='text_section5 mt-md-0 mt-5' data-aos="fade-left" data-aos-duration="5000">
@@ -343,8 +349,8 @@ function Aboutus() {
                                         banking benefits from anywhere
                                     </p>
                                     <div className='col-md-12  pt-4' data-aos="fade-left" data-aos-duration="3000">
-                                        <img className='img-fluid width_gp' src='/imagess/googleplay.png' />
-                                        <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.png' />
+                                        <img className='img-fluid width_gp' src='/imagess/googleplay.webp' />
+                                        <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.webp' />
                                     </div>
                                 </div>
 

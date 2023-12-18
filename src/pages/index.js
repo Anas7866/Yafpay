@@ -10,6 +10,7 @@ import { useEffect } from 'react'
 import Header from '@/Components/Header/Header'
 import LoaderUniversal from '@/Components/LoaderUniversal/LoaderUniversal'
 import Link from 'next/link'
+import MobileHeader from '@/Components/MobileHeader/MobileHeader'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,26 +39,29 @@ export default function Home() {
           <LanguageHeader />
           <div className='col-md-12 background_color_universal'>
             <div className='col-md-12 background_header1 universal_padding'>
-              <div className='row pt-4'>
+              <div className='row pt-4 display_pc'>
                 <div className='col-md-2 col-5'>
                   <Link href="/" className='link_style'>
-                    <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
+                    <img className='img-fluid width_gp_l' src='/imagess/logo.webp' />
                   </Link>
                 </div>
                 <div className='col-md-1 pt-2 col-2'>
                   <Link href="/" className='link_style'>
-                                          <p className='m-0 p-0 font_header2'>Home</p>
-                                    </Link>
+                    <p className='m-0 p-0 font_header2'>Home</p>
+                  </Link>
                 </div>
                 <div className='col-md-1 pt-2 col-2' >
-                    <Link href="/Blogs" className='link_style'>
- <p className='m-0 p-0 font_header2'>Blog</p>
-</Link>
+                  <Link href="/Blogs" className='link_style'>
+                    <p className='m-0 p-0 font_header2'>Blog</p>
+                  </Link>
                 </div>
                 <div className='col-md-1 pt-2 col-3'>
                   <p className='m-0 p-0 font_header2'>Help Center</p>
                 </div>
 
+              </div>
+              <div className='display_mob'>
+                <MobileHeader />
               </div>
               <div className='col-md-12 mt-5 pb-5'>
                 <div className='row'>
@@ -71,13 +75,13 @@ export default function Home() {
                       foreign <br /> payments or convert currencies, all in one place
                     </p>
                     <div className='col-md-12 mt-md-5 pt-4'>
-                      <img className='img-fluid width_gp' src='/imagess/googleplay.png' data-aos="fade-right" data-aos-duration="4000" />
-                      <img className='img-fluid ps-md-4 ps-2 width_gp' src='/imagess/apple.png' data-aos="fade-right" data-aos-duration="3000" />
+                      <img className='img-fluid width_gp' src='/imagess/googleplay.webp' data-aos="fade-right" data-aos-duration="4000" />
+                      <img className='img-fluid ps-md-4 ps-2 width_gp' src='/imagess/apple.webp' data-aos="fade-right" data-aos-duration="3000" />
                     </div>
                     <div className='col-md-12 mt-md-3 mt-4'>
                       <div className='row'>
                         <div className='col-md-3 col-4 '>
-                          <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/people.png' />
+                          <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/people.webp' />
                         </div>
                         <div className='col-md-9 col-8 m-auto'>
                           <p className='m-0 p-0' data-aos="fade-left" data-aos-duration="3000"><span className='fivek'>500K+</span><span className='people ps-2'>People already trusted us.</span></p>
@@ -86,7 +90,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className='col-md-6 mt-md-0 mt-5 text-center'>
-                    <img className='img-fluid' data-aos="zoom-in" src='/imagess/banner1.png' />
+                    <img className='img-fluid' data-aos="zoom-in" src='/imagess/banner1.webp' />
                   </div>
                 </div>
               </div>
@@ -94,42 +98,43 @@ export default function Home() {
 
             <div className='col-md-12  background_header2 pt-5 mt-5 '>
               <div className='col-md-12  text-center'>
-                <p className='font_GBP' data-aos="zoom-in-up" data-aos-duration="4000">Free USD, GBP and EUR accounts<br />
+                <p className='font_GBP' data-aos="zoom-in-up" data-aos-duration="4000">
+                  Free USD, GBP and EUR accounts<br />
                   for all your international transactions</p>
               </div>
               <div className='col-md-12 universal_padding_left'>
                 <div className='row mt-5 pt-4  pb-5' >
                   <div className='col-md-6'>
                     <div className='col-md-12 '>
-                      <img className='img-fluid' src='/imagess/ico1.png' data-aos="fade-right" data-aos-duration="4000" />
+                      <img className='img-fluid' src='/imagess/ico1.webp' data-aos="fade-right" data-aos-duration="4000" />
                       <p className='m-0 p-0 heading_b2' data-aos="fade-right" data-aos-duration="3000">Send and receive money quickly</p>
                       <p className='m-0 p-0 sub_heading_b2' data-aos="fade-right" data-aos-duration="3000">
                         Enjoy fast global money transfer with your international bank<br />
                         account on YAFPAY.
                       </p>
-                      <img className='img-fluid mt-3' src='/imagess/start.png' data-aos="fade-right" data-aos-duration="4000" />
+                      <img className='img-fluid mt-3' src='/imagess/start.webp' data-aos="fade-right" data-aos-duration="4000" />
                     </div>
                     <div className='col-md-12 mt-3'>
-                      <img className='img-fluid' src='/imagess/ico2.png' data-aos="fade-right" data-aos-duration="4000" />
+                      <img className='img-fluid' src='/imagess/ico2.webp' data-aos="fade-right" data-aos-duration="4000" />
                       <p className='m-0 p-0 heading_b2' data-aos="fade-right" data-aos-duration="3000">Instant currency exchange</p>
                       <p className='m-0 p-0 sub_heading_b2' data-aos="fade-right" data-aos-duration="3000">
                         Enjoy quick and efficient online foreign exchange transactions.<br />
                         Say goodbye to bank queues and disappointments..
                       </p>
-                      <img className='img-fluid mt-3' src='/imagess/start.png' data-aos="fade-right" data-aos-duration="4000" />
+                      <img className='img-fluid mt-3' src='/imagess/start.webp' data-aos="fade-right" data-aos-duration="4000" />
                     </div>
                     <div className='col-md-12 mt-3 mb-5'>
-                      <img className='img-fluid' src='/imagess/ico3.png' data-aos="fade-right" data-aos-duration="4000" />
+                      <img className='img-fluid' src='/imagess/ico3.webp' data-aos="fade-right" data-aos-duration="4000" />
                       <p className='m-0 p-0 heading_b2' data-aos="fade-right" data-aos-duration="3000">Send and receive money quickly</p>
                       <p className='m-0 p-0 sub_heading_b2' data-aos="fade-right" data-aos-duration="3000">
                         Enjoy fast global money transfer with your international bank<br />
                         account on YAFPAY.
                       </p>
-                      <img className='img-fluid mt-3' src='/imagess/start.png' data-aos="fade-right" data-aos-duration="4000" />
+                      <img className='img-fluid mt-3' src='/imagess/start.webp' data-aos="fade-right" data-aos-duration="4000" />
                     </div>
                   </div>
                   <div className='col-md-6 text-end mt-5 mt-md-0'>
-                    <img className='img-fluid' src='/imagess/banner2.png' data-aos="fade-left" data-aos-duration="4000" />
+                    <img className='img-fluid' src='/imagess/banner2.webp' data-aos="fade-left" data-aos-duration="4000" />
                   </div>
                 </div>
               </div>
@@ -143,7 +148,7 @@ export default function Home() {
                     <div className='col-md-1 col-1 px-0'>
                       <img className='img-fluid'
                         data-aos="fade-right" data-aos-duration="4000"
-                        src='/imagess/one.png' />
+                        src='/imagess/one.webp' />
                     </div>
                     <div className='col-md-11 col-11'>
                       <p className='m-0 p-0 register_text' data-aos="fade-right" data-aos-duration="4000" >Register in minutes</p>
@@ -159,7 +164,7 @@ export default function Home() {
                     <div className='col-md-1 col-1 px-0'>
                       <img className='img-fluid'
                         data-aos="fade-right" data-aos-duration="4000"
-                        src='/imagess/one.png' />
+                        src='/imagess/one.webp' />
                     </div>
                     <div className='col-md-11 col-11'>
                       <p className='m-0 p-0 register_text' data-aos="fade-right" data-aos-duration="4000" >Complete KYC verifications</p>
@@ -175,7 +180,7 @@ export default function Home() {
                     <div className='col-md-1 col-1 px-0'>
                       <img className='img-fluid'
                         data-aos="fade-right" data-aos-duration="4000"
-                        src='/imagess/one.png' />
+                        src='/imagess/one.webp' />
                     </div>
                     <div className='col-md-11 col-11'>
                       <p className='m-0 p-0 register_text' data-aos="fade-right" data-aos-duration="4000" >Get your virtual account</p>
@@ -188,13 +193,13 @@ export default function Home() {
                 </div>
               </div>
               <div className='col-md-12 mt-5 px-2 px-md-0'>
-                <img className='img-fluid' data-aos="fade-right" data-aos-duration="3000" src='/imagess/register.png' />
+                <img className='img-fluid' data-aos="fade-right" data-aos-duration="3000" src='/imagess/register.webp' />
               </div>
             </div>
             <div className='col-md-12  background_header3 pt-5  '>
               <div className='row universal_padding'>
                 <div className='col-md-6'>
-                  <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/cards.png' />
+                  <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/cards.webp' />
                 </div>
                 <div className='col-md-6 m-auto'>
                   <p className='text_section5 mt-md-0 mt-5' data-aos="fade-left" data-aos-duration="4000">We can easily open a YAFPAY account<br />
@@ -202,38 +207,38 @@ export default function Home() {
                   <div className='col-md-12 px-md-3 px-2 mt-5' >
                     <div className='row'>
                       <div className='col-md-1 col-1 px-0'>
-                        <img className='img-fluid' src='/imagess/onee.png' data-aos="fade-left" data-aos-duration="5000" />
+                        <img className='img-fluid' src='/imagess/onee.webp' data-aos="fade-left" data-aos-duration="5000" />
                       </div>
                       <div className='col-md-11 col-11'>
                         <p className='m-0 p-0 sub_head_new' data-aos="fade-left" data-aos-duration="4000">Personal details</p>
-                        <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                          incididunt ut labore et dolore magna aliqua.</p>
+                        <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Start by creating your YafPay account. Enter your name and email to tailor your
+                          financial experience.</p>
                       </div>
                     </div>
                     <div className='row mt-3'>
                       <div className='col-md-1 col-1 px-0' data-aos="fade-left" data-aos-duration="5000">
-                        <img className='img-fluid' src='/imagess/two.png' />
+                        <img className='img-fluid' src='/imagess/two.webp' />
                       </div>
                       <div className='col-md-11 col-11'>
                         <p className='m-0 p-0 sub_head_new' data-aos="fade-left" data-aos-duration="4000">Identification</p>
-                        <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                          incididunt ut labore et dolore magna aliqua.</p>
+                        <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Elevate security by verifying your identity. Provide a valid identification document
+                          for a protected and compliant environment.</p>
                       </div>
                     </div>
                     <div className='row mt-3'>
                       <div className='col-md-1 col-1 px-0'>
-                        <img className='img-fluid' src='/imagess/three.png' />
+                        <img className='img-fluid' src='/imagess/three.webp' />
                       </div>
                       <div className='col-md-11 col-11' data-aos="fade-left" data-aos-duration="5000">
                         <p className='m-0 p-0 sub_head_new' data-aos="fade-left" data-aos-duration="4000">Address information</p>
-                        <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
-                          incididunt ut labore et dolore magna aliqua.</p>
+                        <p className='m-0 p-0 subb_head' data-aos="fade-left" data-aos-duration="3000">Confirm your address details to add precision to your transactions. Your financial
+                          interactions are now set for accuracy and reliability.</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className='col-md-12 position_new pe-0'>
-                  <img className='img-fluid wisth_circle' src='/imagess/side.png' />
+                  <img className='img-fluid wisth_circle' src='/imagess/side.webp' />
                 </div>
               </div>
 
@@ -248,7 +253,7 @@ export default function Home() {
                   <div className='col-md-12 px-3 mt-5'>
                     <div className='row mt-3'>
                       <div className='col-md-1 col-1 '>
-                        <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                        <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                       </div>
                       <div className='col-md-11 col-11'>
                         <p className='m-0 p-0 subb_head ' data-aos="fade-right" data-aos-duration="3000">
@@ -258,7 +263,7 @@ export default function Home() {
                     </div>
                     <div className='row mt-3'>
                       <div className='col-md-1 col-1 '>
-                        <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                        <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                       </div>
                       <div className='col-md-11 col-11'>
                         <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000">
@@ -268,7 +273,7 @@ export default function Home() {
                     </div>
                     <div className='row mt-3'>
                       <div className='col-md-1 col-1 '>
-                        <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                        <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                       </div>
                       <div className='col-md-11 col-11'>
                         <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000" >
@@ -278,7 +283,7 @@ export default function Home() {
                     </div>
                     <div className='row mt-3'>
                       <div className='col-md-1 col-1 '>
-                        <img className='img-fluid' src='/imagess/check.png' data-aos="fade-right" data-aos-duration="4000" />
+                        <img className='img-fluid' src='/imagess/check.webp' data-aos="fade-right" data-aos-duration="4000" />
                       </div>
                       <div className='col-md-11 col-11'>
                         <p className='m-0 p-0 subb_head' data-aos="fade-right" data-aos-duration="3000">
@@ -289,17 +294,130 @@ export default function Home() {
                   </div>
                 </div>
                 <div className='col-md-6 text-end mt-5 mt-md-0'>
-                  <img className='img-fluid' src='/imagess/mob2.png' data-aos="fade-left" data-aos-duration="6000" />
+                  <img className='img-fluid' src='/imagess/mob2.webp' data-aos="fade-left" data-aos-duration="6000" />
                 </div>
 
               </div>
 
 
             </div>
+            <div className='col-md-12 bg-white pt-5 '>
+              <div className='col-md-12 universal_padding mt-5 mb-5 pb-5'>
+                <div className='flex_set'>
+                  <img className='img-fluid px-md-5 px-2 mt-md-0 mt-4' src='/imagess/mo.webp' />
+                  <img className='img-fluid px-md-5 px-2 mt-md-0 mt-4' src='/imagess/db.webp' />
+                  <img className='img-fluid px-md-5 px-2 mt-md-0 mt-4' src='/imagess/pd.webp' />
+                  <img className='img-fluid px-md-5 px-2 mt-md-0 mt-4' src='/imagess/ft.webp' />
+                  <img className='img-fluid px-md-5 px-2 mt-md-0 mt-4' src='/imagess/dm.webp' />
+                </div>
+              </div>
+            </div>
+            <div className='col-md-12 background_header_linear_22 mt-5 pt-5'>
+              <div className='col-md-12 pb-4  text-center'>
+                <p className='font_GBP' data-aos="zoom-in-up" data-aos-duration="4000">
+                  Building a Positive Workplace Culture: A Foundation for Success
+                </p>
+              </div>
+              <div className='col-md-12 universal_padding mt-5 mb-5 pb-5'>
+
+                <div className='row'>
+                  <div className='col-md-4 mt-4 mt-md-0'>
+                    <div className='col-md-12 px-md-3'>
+                      <div className='col-md-12 '>
+                        <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
+                        <div className='row px-4 neg_mar_top'>
+                          <div className='col-md-6 col-6'>
+                            <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
+                          </div>
+                          <div className='col-md-4 col-4 text-end'>
+                            <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
+                          </div>
+                          <div className='col-md-2 col-2 text-end'>
+                            <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='col-md-12 mt-2 pe-md-5'>
+                        <p className='m-0 p-0 font_cards pe-md-5'>Unlock Financial Freedom Today!
+                        </p>
+                        <p className='m-0 p-0 font_cards_para pe-md-5'>Experience a financial world where simplicity meets power. YafPay opens the
+                          door to effortless money management. From smooth transactions to intuitive
+                          budgeting, take control of your financial journey. Join us and
+                          discover how managing your money can be as easy as a breeze!
+                        </p>
+                      </div>
+                      <div className='col-md-12'>
+                        <img className='img-fluid' src='/imagess/readmore.webp' />
+                      </div>
+                    </div>
+                  </div>
+                  <div className='col-md-4 mt-4 mt-md-0'>
+                    <div className='col-md-12 px-md-3'>
+                      <div className='col-md-12 '>
+                        <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
+                        <div className='row px-4 neg_mar_top'>
+                          <div className='col-md-6 col-6'>
+                            <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
+                          </div>
+                          <div className='col-md-4 col-4 text-end'>
+                            <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
+                          </div>
+                          <div className='col-md-2 col-2 text-end'>
+                            <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='col-md-12 mt-2 pe-md-5'>
+                        <p className='m-0 p-0 font_cards pe-md-5'>Empower Your Finances with YafPay!</p>
+                        <p className='m-0 p-0 font_cards_para pe-md-5'>
+                          Wave goodbye to complexity and take charge of your financial destiny. YafPay
+                          puts the control back in your hands. Navigate your budget, monitor spending, and
+                          execute transactions effortlessly.Your financial journey,
+                          simplified – that's the essence of YafPay. Ready to experience it yourself?</p>
+                      </div>
+                      <div className='col-md-12'>
+                        <img className='img-fluid' src='/imagess/readmore.webp' />
+                      </div>
+                    </div>
+                  </div>
+                  <div className='col-md-4 mt-4 mt-md-0'>
+                    <div className='col-md-12 px-md-3'>
+                      <div className='col-md-12 '>
+                        <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
+                        <div className='row px-4 neg_mar_top'>
+                          <div className='col-md-6 col-6'>
+                            <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
+                          </div>
+                          <div className='col-md-4 col-4 text-end'>
+                            <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
+                          </div>
+                          <div className='col-md-2 col-2 text-end'>
+                            <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='col-md-12 mt-2 pe-md-5'>
+                        <p className='m-0 p-0 font_cards pe-md-5'>Your Personal Finance Oasis!</p>
+                        <p className='m-0 p-0 font_cards_para pe-md-5'>
+                          Step into a financial sanctuary with YafPay. Our platform is a tailored space
+                          designed for your comfort and financial intuition. Explore a world where banking
+                          is seamless, secure, and uniquely yours. Read More Join us and transform
+                          the way you experience financial management – simplicity at its finest!
+
+                        </p>
+                      </div>
+                      <div className='col-md-12'>
+                        <img className='img-fluid' src='/imagess/readmore.webp' />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className='col-md-12  background_header3 pt-5  px-md-5  pb-md-0 pb-5'>
               <div className='row universal_padding'>
                 <div className='col-md-6 px-md-4'>
-                  <img className='img-fluid' src='/imagess/b4.png' data-aos="fade-right" data-aos-duration="6000" />
+                  <img className='img-fluid' src='/imagess/b4.webp' data-aos="fade-right" data-aos-duration="6000" />
                 </div>
                 <div className='col-md-6 m-auto'>
                   <p className='text_section5 mt-md-0 mt-5' data-aos="fade-left" data-aos-duration="5000">
@@ -307,8 +425,8 @@ export default function Home() {
                     banking benefits from anywhere
                   </p>
                   <div className='col-md-12  pt-4' data-aos="fade-left" data-aos-duration="3000">
-                    <img className='img-fluid width_gp' src='/imagess/googleplay.png' />
-                    <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.png' />
+                    <img className='img-fluid width_gp' src='/imagess/googleplay.webp' />
+                    <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.webp' />
                   </div>
                 </div>
 

@@ -11,6 +11,7 @@ import Header from '@/Components/Header/Header'
 import LoaderUniversal from '@/Components/LoaderUniversal/LoaderUniversal'
 import Link from 'next/link'
 import { LuDot } from 'react-icons/lu'
+import MobileHeader from '@/Components/MobileHeader/MobileHeader'
 
 function Blogs() {
     useEffect(() => {
@@ -34,10 +35,10 @@ function Blogs() {
                     <LanguageHeader />
                     <div className='col-md-12 background_color_universal'>
                         <div className='col-md-12 background_headerpp universal_padding'>
-                            <div className='row pt-4'>
+                            <div className='row display_pc pt-4'>
                                 <div className='col-md-2 col-5'>
                                     <Link href="/" className='link_style'>
-                                        <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
+                                        <img className='img-fluid width_gp_l' src='/imagess/logo.webp' />
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2'>
@@ -50,10 +51,15 @@ function Blogs() {
                                         <p className='m-0 p-0 font_header2'>Blog</p>
                                     </Link>
                                 </div>
-                                <div className='col-md-1 pt-2 col-3'>
-                                    <p className='m-0 p-0 font_header2'>Help Center</p>
+                               <div className='col-md-1 pt-2 col-3'>
+                                    <Link href="/helpcenter" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Help Center</p>
+                                    </Link>
                                 </div>
 
+                            </div>
+                            <div className='display_mob'>
+                                <MobileHeader />
                             </div>
                             <div className='col-md-12 mt-5 pb-5'>
                                 <div className='row'>
@@ -70,7 +76,7 @@ function Blogs() {
                                     </div>
 
                                     <div className='col-md-6 mt-md-0 mt-5 text-center'>
-                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/contact.png' />
+                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/contact.webp' />
                                     </div>
                                 </div>
                             </div>
@@ -82,47 +88,47 @@ function Blogs() {
                                         <div className='row'>
                                             <div className='col-md-6 mt-4 '>
                                                 <Link href="/Blogsdetail" className='link_style'>
-                                                <div className='col-md-12 px-md-3'>
-                                                    <div className='col-md-12 '>
-                                                        <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
-                                                        <div className='row px-4 neg_mar_top'>
-                                                            <div className='col-md-6 col-6'>
-                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.png' /> Muhammad Usman</p>
-                                                            </div>
-                                                            <div className='col-md-4 col-4 text-end'>
-                                                                <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
-                                                            </div>
-                                                            <div className='col-md-2 col-2 text-end'>
-                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.png' /> 23</p>
+                                                    <div className='col-md-12 px-md-3'>
+                                                        <div className='col-md-12 '>
+                                                            <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
+                                                            <div className='row px-4 neg_mar_top'>
+                                                                <div className='col-md-6 col-6'>
+                                                                    <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
+                                                                </div>
+                                                                <div className='col-md-4 col-4 text-end'>
+                                                                    <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
+                                                                </div>
+                                                                <div className='col-md-2 col-2 text-end'>
+                                                                    <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
+                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <div className='col-md-12 mt-2 pe-md-5'>
+                                                            <p className='m-0 p-0 font_cards pe-md-5'>Building a Positive Workplace
+                                                                Culture: A Foundation for Success</p>
+                                                            <p className='m-0 p-0 font_cards_para pe-md-5'>Have you ever been asked what your favorite thing
+                                                                about working at your company is? Depending on
+                                                                where you work, there are a few possible reasons.</p>
+                                                        </div>
+                                                        <div className='col-md-12'>
+                                                            <img className='img-fluid' src='/imagess/readmore.webp' />
+                                                        </div>
                                                     </div>
-                                                    <div className='col-md-12 mt-2 pe-md-5'>
-                                                        <p className='m-0 p-0 font_cards pe-md-5'>Building a Positive Workplace
-                                                            Culture: A Foundation for Success</p>
-                                                        <p className='m-0 p-0 font_cards_para pe-md-5'>Have you ever been asked what your favorite thing
-                                                            about working at your company is? Depending on
-                                                            where you work, there are a few possible reasons.</p>
-                                                    </div>
-                                                    <div className='col-md-12'>
-                                                        <img className='img-fluid' src='/imagess/readmore.png' />
-                                                    </div>
-                                                </div>
                                                 </Link>
                                             </div>
                                             <div className='col-md-6 mt-4 '>
                                                 <div className='col-md-12 px-md-3'>
                                                     <div className='col-md-12 '>
-                                                        <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
+                                                        <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
                                                         <div className='row px-4 neg_mar_top'>
                                                             <div className='col-md-6 col-6'>
-                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.png' /> Muhammad Usman</p>
+                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
                                                             </div>
                                                             <div className='col-md-4 col-4 text-end'>
                                                                 <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
                                                             </div>
                                                             <div className='col-md-2 col-2 text-end'>
-                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.png' /> 23</p>
+                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -134,23 +140,23 @@ function Blogs() {
                                                             where you work, there are a few possible reasons.</p>
                                                     </div>
                                                     <div className='col-md-12'>
-                                                        <img className='img-fluid' src='/imagess/readmore.png' />
+                                                        <img className='img-fluid' src='/imagess/readmore.webp' />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='col-md-6 mt-4 '>
                                                 <div className='col-md-12 px-md-3'>
                                                     <div className='col-md-12 '>
-                                                        <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
+                                                        <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
                                                         <div className='row px-4 neg_mar_top'>
                                                             <div className='col-md-6 col-6'>
-                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.png' /> Muhammad Usman</p>
+                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
                                                             </div>
                                                             <div className='col-md-4 col-4 text-end'>
                                                                 <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
                                                             </div>
                                                             <div className='col-md-2 col-2 text-end'>
-                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.png' /> 23</p>
+                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -162,23 +168,23 @@ function Blogs() {
                                                             where you work, there are a few possible reasons.</p>
                                                     </div>
                                                     <div className='col-md-12'>
-                                                        <img className='img-fluid' src='/imagess/readmore.png' />
+                                                        <img className='img-fluid' src='/imagess/readmore.webp' />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='col-md-6 mt-4 '>
                                                 <div className='col-md-12 px-md-3'>
                                                     <div className='col-md-12 '>
-                                                        <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
+                                                        <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
                                                         <div className='row px-4 neg_mar_top'>
                                                             <div className='col-md-6 col-6'>
-                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.png' /> Muhammad Usman</p>
+                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
                                                             </div>
                                                             <div className='col-md-4 col-4 text-end'>
                                                                 <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
                                                             </div>
                                                             <div className='col-md-2 col-2 text-end'>
-                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.png' /> 23</p>
+                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -190,23 +196,23 @@ function Blogs() {
                                                             where you work, there are a few possible reasons.</p>
                                                     </div>
                                                     <div className='col-md-12'>
-                                                        <img className='img-fluid' src='/imagess/readmore.png' />
+                                                        <img className='img-fluid' src='/imagess/readmore.webp' />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='col-md-6 mt-4 '>
                                                 <div className='col-md-12 px-md-3'>
                                                     <div className='col-md-12 '>
-                                                        <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
+                                                        <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
                                                         <div className='row px-4 neg_mar_top'>
                                                             <div className='col-md-6 col-6'>
-                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.png' /> Muhammad Usman</p>
+                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
                                                             </div>
                                                             <div className='col-md-4 col-4 text-end'>
                                                                 <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
                                                             </div>
                                                             <div className='col-md-2 col-2 text-end'>
-                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.png' /> 23</p>
+                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -218,23 +224,23 @@ function Blogs() {
                                                             where you work, there are a few possible reasons.</p>
                                                     </div>
                                                     <div className='col-md-12'>
-                                                        <img className='img-fluid' src='/imagess/readmore.png' />
+                                                        <img className='img-fluid' src='/imagess/readmore.webp' />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='col-md-6 mt-4 '>
                                                 <div className='col-md-12 px-md-3'>
                                                     <div className='col-md-12 '>
-                                                        <img className='img-fluid w-100' src='/imagess/banner-v3.png' />
+                                                        <img className='img-fluid w-100' src='/imagess/banner-v3.webp' />
                                                         <div className='row px-4 neg_mar_top'>
                                                             <div className='col-md-6 col-6'>
-                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.png' /> Muhammad Usman</p>
+                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/profile.webp' /> Muhammad Usman</p>
                                                             </div>
                                                             <div className='col-md-4 col-4 text-end'>
                                                                 <p className='m-0 p-0 font_in_cards'>2nd Feb 2023</p>
                                                             </div>
                                                             <div className='col-md-2 col-2 text-end'>
-                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.png' /> 23</p>
+                                                                <p className='m-0 p-0 font_in_cards'><img className='img-fluid' src='/imagess/comments.webp' /> 23</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -246,7 +252,7 @@ function Blogs() {
                                                             where you work, there are a few possible reasons.</p>
                                                     </div>
                                                     <div className='col-md-12'>
-                                                        <img className='img-fluid' src='/imagess/readmore.png' />
+                                                        <img className='img-fluid' src='/imagess/readmore.webp' />
                                                     </div>
                                                 </div>
                                             </div>
@@ -259,7 +265,7 @@ function Blogs() {
                                                     <p className='showinggg'>Showing: <span className='new_text'>14 of 20</span></p>
                                                 </div>
                                                 <div className='col-md-6 text-end'>
-                                                    <img className='img-fluid' src='/imagess/pg.png' />
+                                                    <img className='img-fluid' src='/imagess/pg.webp' />
                                                 </div>
                                             </div>
                                         </div>
@@ -270,10 +276,10 @@ function Blogs() {
                                         <p className='m-0 p-0 follow_j'>Follow our journey</p>
                                     </div>
                                     <div className='d-flex mt-3' >
-                                        <img className='img-fluid' src='/imagess/facebook.png' />
-                                        <img className='img-fluid ps-3' src='/imagess/twitter.png' />
-                                        <img className='img-fluid ps-3' src='/imagess/instagram.png' />
-                                        <img className='img-fluid ps-3' src='/imagess/pint.png' />
+                                        <img className='img-fluid' src='/imagess/facebook.webp' />
+                                        <img className='img-fluid ps-3' src='/imagess/twitter.webp' />
+                                        <img className='img-fluid ps-3' src='/imagess/instagram.webp' />
+                                        <img className='img-fluid ps-3' src='/imagess/pint.webp' />
                                     </div>
                                     <div className='col-md-12 mt-5'>
                                         <p className='m-0 p-0 follow_j'>Popular Blogs</p>
@@ -281,7 +287,7 @@ function Blogs() {
                                     <div className='col-md-12 mt-3'>
                                         <div className='row'>
                                             <div className='col-md-6'>
-                                                <img className='img-fluid w-100' src='/imagess/bb.png' />
+                                                <img className='img-fluid w-100' src='/imagess/bb.webp' />
                                             </div>
                                             <div className='col-md-6 m-auto'>
                                                 <p className='m-0 p-0 bb_text'>Building a Positive
@@ -296,7 +302,7 @@ function Blogs() {
                                     <div className='col-md-12 mt-3'>
                                         <div className='row'>
                                             <div className='col-md-6'>
-                                                <img className='img-fluid w-100' src='/imagess/bb.png' />
+                                                <img className='img-fluid w-100' src='/imagess/bb.webp' />
                                             </div>
                                             <div className='col-md-6 m-auto'>
                                                 <p className='m-0 p-0 bb_text'>Building a Positive
@@ -311,7 +317,7 @@ function Blogs() {
                                     <div className='col-md-12 mt-3'>
                                         <div className='row'>
                                             <div className='col-md-6'>
-                                                <img className='img-fluid w-100' src='/imagess/bb.png' />
+                                                <img className='img-fluid w-100' src='/imagess/bb.webp' />
                                             </div>
                                             <div className='col-md-6 m-auto'>
                                                 <p className='m-0 p-0 bb_text'>Building a Positive
@@ -326,7 +332,7 @@ function Blogs() {
                                     <div className='col-md-12 mt-3'>
                                         <div className='row'>
                                             <div className='col-md-6'>
-                                                <img className='img-fluid w-100' src='/imagess/bb.png' />
+                                                <img className='img-fluid w-100' src='/imagess/bb.webp' />
                                             </div>
                                             <div className='col-md-6 m-auto'>
                                                 <p className='m-0 p-0 bb_text'>Building a Positive
@@ -355,7 +361,7 @@ function Blogs() {
                         <div className='col-md-12  background_header3 pt-5  px-md-5  pb-md-0 pb-5'>
                             <div className='row universal_padding'>
                                 <div className='col-md-6 px-md-4'>
-                                    <img className='img-fluid' src='/imagess/b4.png' data-aos="fade-right" data-aos-duration="6000" />
+                                    <img className='img-fluid' src='/imagess/b4.webp' data-aos="fade-right" data-aos-duration="6000" />
                                 </div>
                                 <div className='col-md-6 m-auto'>
                                     <p className='text_section5 mt-md-0 mt-5' data-aos="fade-left" data-aos-duration="5000">
@@ -363,8 +369,8 @@ function Blogs() {
                                         banking benefits from anywhere
                                     </p>
                                     <div className='col-md-12  pt-4' data-aos="fade-left" data-aos-duration="3000">
-                                        <img className='img-fluid width_gp' src='/imagess/googleplay.png' />
-                                        <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.png' />
+                                        <img className='img-fluid width_gp' src='/imagess/googleplay.webp' />
+                                        <img className='img-fluid ps-md-4 width_gp ps-2' src='/imagess/apple.webp' />
                                     </div>
                                 </div>
 

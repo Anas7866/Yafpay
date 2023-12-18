@@ -13,6 +13,7 @@ import Link from 'next/link'
 import { LuDot } from 'react-icons/lu'
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
+import MobileHeader from '@/Components/MobileHeader/MobileHeader'
 
 function Contactus() {
     useEffect(() => {
@@ -43,26 +44,31 @@ function Contactus() {
                     <LanguageHeader />
                     <div className='col-md-12 background_color_universal'>
                         <div className='col-md-12 background_headerpp universal_padding'>
-                            <div className='row pt-4'>
+                            <div className='row display_pc pt-4'>
                                 <div className='col-md-2 col-5'>
                                     <Link href="/" className='link_style'>
-                                        <img className='img-fluid width_gp_l' src='/imagess/logo.png' />
+                                        <img className='img-fluid width_gp_l' src='/imagess/logo.webp' />
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2'>
                                     <Link href="/" className='link_style'>
-                                          <p className='m-0 p-0 font_header2'>Home</p>
+                                        <p className='m-0 p-0 font_header2'>Home</p>
                                     </Link>
                                 </div>
                                 <div className='col-md-1 pt-2 col-2' >
-                                      <Link href="/Blogs" className='link_style'>
- <p className='m-0 p-0 font_header2'>Blog</p>
-</Link>
+                                    <Link href="/Blogs" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Blog</p>
+                                    </Link>
                                 </div>
-                                <div className='col-md-1 pt-2 col-3'>
-                                    <p className='m-0 p-0 font_header2'>Help Center</p>
+                               <div className='col-md-1 pt-2 col-3'>
+                                    <Link href="/helpcenter" className='link_style'>
+                                        <p className='m-0 p-0 font_header2'>Help Center</p>
+                                    </Link>
                                 </div>
 
+                            </div>
+                            <div className='display_mob'>
+                                <MobileHeader />
                             </div>
                             <div className='col-md-12 mt-5 pb-5'>
                                 <div className='row'>
@@ -75,7 +81,7 @@ function Contactus() {
                                         </p>
                                     </div>
                                     <div className='col-md-6 mt-md-0 mt-5 text-center'>
-                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/contact.png' />
+                                        <img className='img-fluid' data-aos="zoom-in" src='/imagess/contact.webp' />
                                     </div>
                                 </div>
                             </div>
@@ -90,21 +96,21 @@ function Contactus() {
                                 <div className='row mt-5 pt-4  pb-5' >
                                     <div className='col-md-6 m-auto'>
                                         <div className='col-md-12 '>
-                                            <img className='img-fluid' src='/imagess/heart.png' data-aos="fade-right" data-aos-duration="4000" />
+                                            <img className='img-fluid' src='/imagess/heart.webp' data-aos="fade-right" data-aos-duration="4000" />
                                             <p className='m-0 p-0 heading_b2' data-aos="fade-right" data-aos-duration="3000">Sales</p>
                                             <p className='m-0 p-0 sub_heading_b2' data-aos="fade-right" data-aos-duration="3000">
                                                 sales@yafpay.com
                                             </p>
                                         </div>
                                         <div className='col-md-12 mt-5'>
-                                            <img className='img-fluid' src='/imagess/head.png' data-aos="fade-right" data-aos-duration="4000" />
+                                            <img className='img-fluid' src='/imagess/head.webp' data-aos="fade-right" data-aos-duration="4000" />
                                             <p className='m-0 p-0 heading_b2' data-aos="fade-right" data-aos-duration="3000">Help & Support</p>
                                             <p className='m-0 p-0 sub_heading_b2' data-aos="fade-right" data-aos-duration="3000">
                                                 supports@yafpay.com
                                             </p>
                                         </div>
                                         <div className='col-md-12 mt-5 mb-5'>
-                                            <img className='img-fluid' src='/imagess/paper.png' data-aos="fade-right" data-aos-duration="4000" />
+                                            <img className='img-fluid' src='/imagess/paper.webp' data-aos="fade-right" data-aos-duration="4000" />
                                             <p className='m-0 p-0 heading_b2' data-aos="fade-right" data-aos-duration="3000">Media & Press</p>
                                             <p className='m-0 p-0 sub_heading_b2' data-aos="fade-right" data-aos-duration="3000">
                                                 Mediapress@yafpay.com
@@ -112,7 +118,7 @@ function Contactus() {
                                         </div>
                                     </div>
                                     <div className='col-md-6 text-end mt-5 mt-md-0'>
-                                        <img className='img-fluid' src='/imagess/csv.png' data-aos="fade-left" data-aos-duration="4000" />
+                                        <img className='img-fluid' src='/imagess/csv.webp' data-aos="fade-left" data-aos-duration="4000" />
                                     </div>
                                 </div>
                             </div>
@@ -150,7 +156,7 @@ function Contactus() {
                                 </div>
                             </div>
                             <div className='col-md-12 mt-5 px-2 px-md-0 text-center'>
-                                <img className='img-fluid' data-aos="fade-right" data-aos-duration="3000" src='/imagess/submit.png' />
+                                <img className='img-fluid' data-aos="fade-right" data-aos-duration="3000" src='/imagess/submit.webp' />
                             </div>
                         </div>
                         <div className='col-md-12  background_header22 pt-5 mb-5 pb-5 '>
@@ -160,7 +166,7 @@ function Contactus() {
                                     <p className='font_GBP1' data-aos="zoom-in-up" data-aos-duration="4000">Just find your answers below</p>
                                 </div>
                                 <div className='col-md-4'>
-                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/banner-s3.png' />
+                                    <img className='img-fluid' data-aos="fade-right" data-aos-duration="4000" src='/imagess/banner-s3.webp' />
                                 </div>
                                 <div className='col-md-8 px-md-5 mt-5 m-md-auto'>
                                     <div className='col-md-12 background_card_new11   bg-white'
@@ -174,7 +180,7 @@ function Contactus() {
                                                     <p className='m-0 p-0 new_c_text'>1. What kind of financial consultancy you need?</p>
                                                 </div>
                                                 <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open1 ? "minus" : "pluss"}.png`} />
+                                                    <img className='img-fluid' src={`/imagess/${open1 ? "minus" : "pluss"}.webp`} />
                                                 </div>
                                             </div>
                                         </div>
@@ -197,7 +203,7 @@ function Contactus() {
                                                     <p className='m-0 p-0 new_c_text'>2. What Is The Best Features And Services We Deliver?</p>
                                                 </div>
                                                 <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open2 ? "minus" : "pluss"}.png`} />
+                                                    <img className='img-fluid' src={`/imagess/${open2 ? "minus" : "pluss"}.webp`} />
                                                 </div>
                                             </div>
                                         </div>
@@ -220,7 +226,7 @@ function Contactus() {
                                                     <p className='m-0 p-0 new_c_text'>3. What Are The Objectives Of This Service?</p>
                                                 </div>
                                                 <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open3 ? "minus" : "pluss"}.png`} />
+                                                    <img className='img-fluid' src={`/imagess/${open3 ? "minus" : "pluss"}.webp`} />
                                                 </div>
                                             </div>
                                         </div>
@@ -243,7 +249,7 @@ function Contactus() {
                                                     <p className='m-0 p-0 new_c_text'>4. What Is A Multi-currency Card?</p>
                                                 </div>
                                                 <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open4 ? "minus" : "pluss"}.png`} />
+                                                    <img className='img-fluid' src={`/imagess/${open4 ? "minus" : "pluss"}.webp`} />
                                                 </div>
                                             </div>
                                         </div>
@@ -266,7 +272,7 @@ function Contactus() {
                                                     <p className='m-0 p-0 new_c_text'>5. What Is The Best Features And Services We Deliver?</p>
                                                 </div>
                                                 <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open5 ? "minus" : "pluss"}.png`} />
+                                                    <img className='img-fluid' src={`/imagess/${open5 ? "minus" : "pluss"}.webp`} />
                                                 </div>
                                             </div>
                                         </div>
@@ -289,7 +295,7 @@ function Contactus() {
                                                     <p className='m-0 p-0 new_c_text'>6. What Happened To The Borderless Account?</p>
                                                 </div>
                                                 <div className='col-md-4 col-2 text-end'>
-                                                    <img className='img-fluid' src={`/imagess/${open6 ? "minus" : "pluss"}.png`} />
+                                                    <img className='img-fluid' src={`/imagess/${open6 ? "minus" : "pluss"}.webp`} />
                                                 </div>
                                             </div>
                                         </div>
