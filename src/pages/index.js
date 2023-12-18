@@ -56,7 +56,9 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className='col-md-1 pt-2 col-3'>
-                  <p className='m-0 p-0 font_header2'>Help Center</p>
+                  <Link href="/helpcenter" className='link_style'>
+                    <p className='m-0 p-0 font_header2'>Help Center</p>
+                  </Link>
                 </div>
 
               </div>
